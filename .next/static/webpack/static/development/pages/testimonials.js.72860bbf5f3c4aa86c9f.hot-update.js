@@ -1,0 +1,153 @@
+webpackHotUpdate("static\\development\\pages\\testimonials.js",{
+
+/***/ "./components/Header.js":
+/*!******************************!*\
+  !*** ./components/Header.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "C:\\Users\\Alex\\Documents\\coding\\kaysensurfboards\\components\\Header.js";
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+var linkStyle = {
+  display: "inline-block",
+  textDecoration: "none",
+  fontSize: "3vw"
+};
+var headerStyle = {
+  maxWidth: 1000,
+  margin: "auto",
+  display: "flex",
+  justifyContent: "space-between",
+  padding: 20
+};
+var blockStyle = {
+  flex: 1,
+  display: "inline-block"
+};
+
+function Header() {
+  return __jsx("div", {
+    style: headerStyle,
+    className: "jsx-2248293132",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, __jsx("a", {
+    className: "jsx-2248293132" + " " + "link",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, "Home")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/about",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, __jsx("a", {
+    style: linkStyle,
+    className: "jsx-2248293132",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }, "About")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/testimonials",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }, __jsx("a", {
+    style: linkStyle,
+    className: "jsx-2248293132",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
+    },
+    __self: this
+  }, "Testimonials")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: this
+  }, __jsx("a", {
+    style: linkStyle,
+    className: "jsx-2248293132",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: this
+  }, "Media")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/contact",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: this
+  }, __jsx("a", {
+    style: linkStyle,
+    className: "jsx-2248293132",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  }, "Contact")), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "3839937007",
+    __self: this
+  }, ".link.jsx-2248293132{color:blue;-webkit-text-decoration:none;text-decoration:none;}.container.jsx-2248293132{margin:50px;}p.jsx-2248293132{color:blue;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcQWxleFxcRG9jdW1lbnRzXFxjb2RpbmdcXGtheXNlbnN1cmZib2FyZHNcXGNvbXBvbmVudHNcXEhlYWRlci5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUF3Q1ksQUFHcUIsQUFJRSxBQUdELFdBTlMsQUFPdEIsQ0FIQSxpREFIQSIsImZpbGUiOiJDOlxcVXNlcnNcXEFsZXhcXERvY3VtZW50c1xcY29kaW5nXFxrYXlzZW5zdXJmYm9hcmRzXFxjb21wb25lbnRzXFxIZWFkZXIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTGluayBmcm9tICduZXh0L2xpbmsnO1xyXG5cclxuY29uc3QgbGlua1N0eWxlID0ge1xyXG4gIGRpc3BsYXk6IFwiaW5saW5lLWJsb2NrXCIsXHJcbiAgdGV4dERlY29yYXRpb246IFwibm9uZVwiLFxyXG4gIGZvbnRTaXplOiBcIjN2d1wiLFxyXG4gIFxyXG59O1xyXG5jb25zdCBoZWFkZXJTdHlsZSA9IHtcclxuICBcclxuICBtYXhXaWR0aDoxMDAwLFxyXG4gIG1hcmdpbjogXCJhdXRvXCIsXHJcbiAgZGlzcGxheTpcImZsZXhcIixcclxuICBqdXN0aWZ5Q29udGVudDpcInNwYWNlLWJldHdlZW5cIixcclxuICBwYWRkaW5nOjIwLFxyXG59XHJcbmNvbnN0IGJsb2NrU3R5bGUgPSB7XHJcbiAgXHJcbiAgZmxleDoxLFxyXG4gIGRpc3BsYXk6IFwiaW5saW5lLWJsb2NrXCIsXHJcbn1cclxuZnVuY3Rpb24gSGVhZGVyKCkge1xyXG5cclxuICAgIHJldHVybihcclxuICAgICAgPGRpdiBzdHlsZSA9IHtoZWFkZXJTdHlsZX0+XHJcbiAgICAgIDxMaW5rICBocmVmPVwiL1wiPlxyXG4gICAgICAgIDxhIGNsYXNzTmFtZSA9XCJsaW5rXCI+SG9tZTwvYT5cclxuICAgICAgPC9MaW5rPlxyXG4gICAgICA8TGluayBocmVmPVwiL2Fib3V0XCI+XHJcbiAgICAgICAgPGEgc3R5bGU9e2xpbmtTdHlsZX0+QWJvdXQ8L2E+XHJcbiAgICAgIDwvTGluaz5cclxuICAgICAgPExpbmsgaHJlZj1cIi90ZXN0aW1vbmlhbHNcIj5cclxuICAgICAgICA8YSBzdHlsZT17bGlua1N0eWxlfT5UZXN0aW1vbmlhbHM8L2E+XHJcbiAgICAgIDwvTGluaz5cclxuICAgICAgPExpbmsgaHJlZj1cIi9tZWRpYVwiPlxyXG4gICAgICAgIDxhIHN0eWxlPXtsaW5rU3R5bGV9Pk1lZGlhPC9hPlxyXG4gICAgICA8L0xpbms+XHJcbiAgICAgIDxMaW5rIGhyZWY9XCIvY29udGFjdFwiPlxyXG4gICAgICAgIDxhIHN0eWxlPXtsaW5rU3R5bGV9PkNvbnRhY3Q8L2E+XHJcbiAgICAgIDwvTGluaz5cclxuPHN0eWxlIGpzeD57YFxyXG4gICAgICAgIC5saW5rIHtcclxuICAgICAgICAgIGNvbG9yOmJsdWU7XHJcbiAgICAgICAgICB0ZXh0LWRlY29yYXRpb246bm9uZTtcclxuICAgICAgICB9XHJcbiAgICAgICAgLmNvbnRhaW5lciB7XHJcbiAgICAgICAgICBtYXJnaW46IDUwcHg7XHJcbiAgICAgICAgfVxyXG4gICAgICAgIHAge1xyXG4gICAgICAgICAgY29sb3I6IGJsdWU7XHJcbiAgICAgICAgfVxyXG4gICAgICBgfTwvc3R5bGU+XHJcbiAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXHJcbiAgICAgICAgcCB7XHJcbiAgICAgICAgICBmb250LXNpemU6IDIwcHg7XHJcbiAgICAgICAgfVxyXG4gICAgICBgfTwvc3R5bGU+XHJcbiAgICA8L2Rpdj5cclxuICAgIClcclxufVxyXG4vKjxMaW5rICBocmVmPVwiL1wiPlxyXG48YSBjbGFzc05hbWUgPVwiYXNkZlwiPkhvbWU8L2E+XHJcbjwvTGluaz5cclxuPExpbmsgaHJlZj1cIi9hYm91dFwiPlxyXG48YSBzdHlsZT17bGlua1N0eWxlfT5BYm91dDwvYT5cclxuPC9MaW5rPlxyXG48TGluayBocmVmPVwiL3Rlc3RpbW9uaWFsc1wiPlxyXG48YSBzdHlsZT17bGlua1N0eWxlfT5UZXN0aW1vbmlhbHM8L2E+XHJcbjwvTGluaz5cclxuPExpbmsgaHJlZj1cIi9tZWRpYVwiPlxyXG48YSBzdHlsZT17bGlua1N0eWxlfT5NZWRpYTwvYT5cclxuPC9MaW5rPlxyXG48TGluayBocmVmPVwiL2NvbnRhY3RcIj5cclxuPGEgc3R5bGU9e2xpbmtTdHlsZX0+Q29udGFjdDwvYT5cclxuPC9MaW5rPiovXHJcbmV4cG9ydCBkZWZhdWx0IEhlYWRlcjsiXX0= */\n/*@ sourceURL=C:\\\\Users\\\\Alex\\\\Documents\\\\coding\\\\kaysensurfboards\\\\components\\\\Header.js */"), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "3694342282",
+    __self: this
+  }, "p{font-size:20px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcQWxleFxcRG9jdW1lbnRzXFxjb2RpbmdcXGtheXNlbnN1cmZib2FyZHNcXGNvbXBvbmVudHNcXEhlYWRlci5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFvRHlCLEFBRzBCLGVBQ2pCIiwiZmlsZSI6IkM6XFxVc2Vyc1xcQWxleFxcRG9jdW1lbnRzXFxjb2RpbmdcXGtheXNlbnN1cmZib2FyZHNcXGNvbXBvbmVudHNcXEhlYWRlci5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluayc7XHJcblxyXG5jb25zdCBsaW5rU3R5bGUgPSB7XHJcbiAgZGlzcGxheTogXCJpbmxpbmUtYmxvY2tcIixcclxuICB0ZXh0RGVjb3JhdGlvbjogXCJub25lXCIsXHJcbiAgZm9udFNpemU6IFwiM3Z3XCIsXHJcbiAgXHJcbn07XHJcbmNvbnN0IGhlYWRlclN0eWxlID0ge1xyXG4gIFxyXG4gIG1heFdpZHRoOjEwMDAsXHJcbiAgbWFyZ2luOiBcImF1dG9cIixcclxuICBkaXNwbGF5OlwiZmxleFwiLFxyXG4gIGp1c3RpZnlDb250ZW50Olwic3BhY2UtYmV0d2VlblwiLFxyXG4gIHBhZGRpbmc6MjAsXHJcbn1cclxuY29uc3QgYmxvY2tTdHlsZSA9IHtcclxuICBcclxuICBmbGV4OjEsXHJcbiAgZGlzcGxheTogXCJpbmxpbmUtYmxvY2tcIixcclxufVxyXG5mdW5jdGlvbiBIZWFkZXIoKSB7XHJcblxyXG4gICAgcmV0dXJuKFxyXG4gICAgICA8ZGl2IHN0eWxlID0ge2hlYWRlclN0eWxlfT5cclxuICAgICAgPExpbmsgIGhyZWY9XCIvXCI+XHJcbiAgICAgICAgPGEgY2xhc3NOYW1lID1cImxpbmtcIj5Ib21lPC9hPlxyXG4gICAgICA8L0xpbms+XHJcbiAgICAgIDxMaW5rIGhyZWY9XCIvYWJvdXRcIj5cclxuICAgICAgICA8YSBzdHlsZT17bGlua1N0eWxlfT5BYm91dDwvYT5cclxuICAgICAgPC9MaW5rPlxyXG4gICAgICA8TGluayBocmVmPVwiL3Rlc3RpbW9uaWFsc1wiPlxyXG4gICAgICAgIDxhIHN0eWxlPXtsaW5rU3R5bGV9PlRlc3RpbW9uaWFsczwvYT5cclxuICAgICAgPC9MaW5rPlxyXG4gICAgICA8TGluayBocmVmPVwiL21lZGlhXCI+XHJcbiAgICAgICAgPGEgc3R5bGU9e2xpbmtTdHlsZX0+TWVkaWE8L2E+XHJcbiAgICAgIDwvTGluaz5cclxuICAgICAgPExpbmsgaHJlZj1cIi9jb250YWN0XCI+XHJcbiAgICAgICAgPGEgc3R5bGU9e2xpbmtTdHlsZX0+Q29udGFjdDwvYT5cclxuICAgICAgPC9MaW5rPlxyXG48c3R5bGUganN4PntgXHJcbiAgICAgICAgLmxpbmsge1xyXG4gICAgICAgICAgY29sb3I6Ymx1ZTtcclxuICAgICAgICAgIHRleHQtZGVjb3JhdGlvbjpub25lO1xyXG4gICAgICAgIH1cclxuICAgICAgICAuY29udGFpbmVyIHtcclxuICAgICAgICAgIG1hcmdpbjogNTBweDtcclxuICAgICAgICB9XHJcbiAgICAgICAgcCB7XHJcbiAgICAgICAgICBjb2xvcjogYmx1ZTtcclxuICAgICAgICB9XHJcbiAgICAgIGB9PC9zdHlsZT5cclxuICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcclxuICAgICAgICBwIHtcclxuICAgICAgICAgIGZvbnQtc2l6ZTogMjBweDtcclxuICAgICAgICB9XHJcbiAgICAgIGB9PC9zdHlsZT5cclxuICAgIDwvZGl2PlxyXG4gICAgKVxyXG59XHJcbi8qPExpbmsgIGhyZWY9XCIvXCI+XHJcbjxhIGNsYXNzTmFtZSA9XCJhc2RmXCI+SG9tZTwvYT5cclxuPC9MaW5rPlxyXG48TGluayBocmVmPVwiL2Fib3V0XCI+XHJcbjxhIHN0eWxlPXtsaW5rU3R5bGV9PkFib3V0PC9hPlxyXG48L0xpbms+XHJcbjxMaW5rIGhyZWY9XCIvdGVzdGltb25pYWxzXCI+XHJcbjxhIHN0eWxlPXtsaW5rU3R5bGV9PlRlc3RpbW9uaWFsczwvYT5cclxuPC9MaW5rPlxyXG48TGluayBocmVmPVwiL21lZGlhXCI+XHJcbjxhIHN0eWxlPXtsaW5rU3R5bGV9Pk1lZGlhPC9hPlxyXG48L0xpbms+XHJcbjxMaW5rIGhyZWY9XCIvY29udGFjdFwiPlxyXG48YSBzdHlsZT17bGlua1N0eWxlfT5Db250YWN0PC9hPlxyXG48L0xpbms+Ki9cclxuZXhwb3J0IGRlZmF1bHQgSGVhZGVyOyJdfQ== */\n/*@ sourceURL=C:\\\\Users\\\\Alex\\\\Documents\\\\coding\\\\kaysensurfboards\\\\components\\\\Header.js */"));
+}
+/*<Link  href="/">
+<a className ="asdf">Home</a>
+</Link>
+<Link href="/about">
+<a style={linkStyle}>About</a>
+</Link>
+<Link href="/testimonials">
+<a style={linkStyle}>Testimonials</a>
+</Link>
+<Link href="/media">
+<a style={linkStyle}>Media</a>
+</Link>
+<Link href="/contact">
+<a style={linkStyle}>Contact</a>
+</Link>*/
+
+
+/* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/***/ })
+
+})
+//# sourceMappingURL=testimonials.js.72860bbf5f3c4aa86c9f.hot-update.js.map

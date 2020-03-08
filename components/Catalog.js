@@ -36,7 +36,9 @@ const boardDimStyle = {
     fontSize:18,
 }
 const boardImgStyle = {
-    width:465,
+    maxWidth:465,
+    width:"98%",
+    border: '1px solid #DDD'
 }
 
 
@@ -46,8 +48,9 @@ function boardItem(Board){
     var tech = Board.technology;
     var dimension = Board.dimension;
     var imgSrc = Board.img;
+    var key = Board.key;
     return(
-        <div style = {boardItemStyle}>
+        <div key = {key} style = {boardItemStyle}>
             
             <div style = {boardNameStyle}>{name}</div>
             {imgSrc ? <img style = {boardImgStyle} src = {require(""+imgSrc)}></img>:null}

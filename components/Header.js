@@ -3,7 +3,7 @@ import Link from 'next/link';
 const linkStyle = {
   display: "inline-block",
   textDecoration: "none",
-  fontSize: 18,
+  fontSize: "3vw",
   
 };
 const headerStyle = {
@@ -19,29 +19,62 @@ const blockStyle = {
   flex:1,
   display: "inline-block",
 }
-class Header extends React.Component {
+function Header() {
 
-  render(){
     return(
       <div style = {headerStyle}>
-        <Link style = {blockStyle} href="/">
-          <a style={linkStyle}>Home</a>
-        </Link>
-        <Link href="/about">
-          <a style={linkStyle}>About</a>
-        </Link>
-        <Link href="/testimonials">
-          <a style={linkStyle}>Testimonials</a>
-        </Link>
-        <Link href="/media">
-          <a style={linkStyle}>Media</a>
-        </Link>
-        <Link href="/contact">
-          <a style={linkStyle}>Contact</a>
-        </Link>
-      </div>
+      <Link  href="/">
+        <a className ="link">Home</a>
+      </Link>
+      <Link href="/about">
+        <a className ="link">About</a>
+      </Link>
+      <Link href="/testimonials">
+        <a className ="link">Testimonials</a>
+      </Link>
+      <Link href="/media">
+        <a className ="link">Media</a>
+      </Link>
+      <Link href="/contact">
+        <a className ="link">Contact</a>
+      </Link>
+<style jsx>{`
+        .link {
+          text-decoration:none;
+          font-size: 3vw;
+        } @media (min-width: 850px){
+          .link {
+            font-size: 25px;
+          }
+        }
+        .container {
+          margin: 50px;
+        }
+        p {
+          color: blue;
+        }
+      `}</style>
+      <style jsx global>{`
+        p {
+          font-size: 20px;
+        }
+      `}</style>
+    </div>
     )
-  }
 }
-
+/*<Link  href="/">
+<a className ="asdf">Home</a>
+</Link>
+<Link href="/about">
+<a style={linkStyle}>About</a>
+</Link>
+<Link href="/testimonials">
+<a style={linkStyle}>Testimonials</a>
+</Link>
+<Link href="/media">
+<a style={linkStyle}>Media</a>
+</Link>
+<Link href="/contact">
+<a style={linkStyle}>Contact</a>
+</Link>*/
 export default Header;
