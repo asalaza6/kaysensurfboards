@@ -10,7 +10,7 @@ function mediaItem(test){
     var Link = test.link;
     var imgSrc = test.img;
     return(
-        <div className = "container">
+        <div key = {test.key}  className = "container">
             <div className = "title">{Title}</div>
             <div className = "mediaImg">
                 {imgSrc ? <img onClick = {()=>window.open(Link)} className = "img" src = {require(""+imgSrc)}></img>:null}
@@ -25,11 +25,11 @@ function mediaItem(test){
                 }
                 .title {
                     font-size:20pt;
-                    font-weight: bold;
+                    font-weight: 500;
                 }
                 .container{
+                    padding:5px;
                     text-align:center;
-                    width:100%;
                 }
             `}</style>
         </div>

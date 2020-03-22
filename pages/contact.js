@@ -1,4 +1,4 @@
-import Layout from '../components/MyLayout';
+
 
 export default function Contact() {
   return (
@@ -13,12 +13,6 @@ export default function Contact() {
       </p>
       <p>
         <label>Phone Number: <input type="email" name="email" /></label>
-      </p>
-      <p>
-        <label>What are you looking for: <select name="role[]" multiple>
-          <option value="order">Make an order</option>
-          <option value="question">Ask a question</option>
-        </select></label>
       </p>
       <p>
         <label>Description: <textarea name="message"></textarea></label>

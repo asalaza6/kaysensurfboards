@@ -1,6 +1,6 @@
-import MyLayout from "../components/MyLayout";
+
 import Catalog from "../components/Catalog";
-import Splash from "../components/splash";
+import Splash from "../components/Splash";
 export default function Index() {
   
   return (

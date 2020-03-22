@@ -1,6 +1,5 @@
-import Layout from '../components/MyLayout';
+
 import frontalImage from "../public/aboutfront.jpg"
-import Splash from "../components/splash";
 
 
 const imgStyle = {
@@ -16,10 +15,8 @@ const contain = {
 export default function About() {
   return (
       <div className = "container">
-        <div className = "top">
-          <p className = "topelement1">Chris Kaysen has been shaping surfboards in San Clemente for 35 years. With 100,000 boards and counting, you can trust Chris to shape a surfboard to fit your exact needs...</p>
-          <div className = "topelement2"><img className = "image" src = {frontalImage}></img></div>
-        </div>
+        <p className = "topelement1">Chris Kaysen has been shaping surfboards in San Clemente for 35 years. With 100,000 boards and counting, you can trust Chris to shape a surfboard to fit your exact needs...</p>
+        <div className = "topelement2"><img className = "image" src = {frontalImage}></img></div>
         <style jsx>{`
           .container{
             display: flex;

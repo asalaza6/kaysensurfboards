@@ -38,19 +38,52 @@ function testimonialItem(test){
     var name = test.name;
     var testimonial = test.testimonial;
     return(
-        <div style = {testItemStyle}>
-<div style = {testTestStyle}>{testimonial}</div>
-            <div style = {testNameStyle}>{"- " + name}</div>
-            
-            
+        <div key = {test.key} className = "item">
+<div className = "testimonial">{testimonial}</div>
+            <div className = "name">{"- " + name}</div>
+            <style jsx>{`
+                .item {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: center;
+                    border: 1px solid #DDD;
+                    border-radius: 20px;
+                    margin-bottom: 20px;
+                    padding: 10px;
+                }
+                .testimonial {
+                    text-align: center;
+                    padding:4px;
+                    font-size:10pt;
+                    
+                }
+                .name {
+                    text-align: right;
+                    padding:10;
+                    font-size:12pt;
+                }
+            `}</style>
         </div>
         
     );
 }
 export default function Testimonials(){
     return(
-        <div style = {containerStyle}>
+        <div className = "containerStyle">
             {Testimonial.map(test=>testimonialItem(test))}
+    <style jsx >{`
+        .containerStyle {
+            display: flex;
+            flex-direction: column;
+            justifyContent: space-evenly;
+            alignSelf: center;
+            flexWrap: wrap;
+            maxWidth: 1000;
+            margin: auto;
+            paddingTop: 20;
+        }
+    `}</style>
         </div>
     );
 }
