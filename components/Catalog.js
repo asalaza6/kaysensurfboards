@@ -38,7 +38,8 @@ const boardDimStyle = {
 const boardImgStyle = {
     maxWidth:465,
     width:"98%",
-    border: '1px solid #DDD'
+    border: '1px solid #DDD',
+    borderRadius:"20px",
 }
 
 

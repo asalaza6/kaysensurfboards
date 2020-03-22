@@ -12,9 +12,7 @@ const Content = () => {
 };
 
 const Page = () => (
-  <Layout>
     <Content/>
-  </Layout>
 );
 
 export default Page;

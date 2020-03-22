@@ -4,9 +4,9 @@ import Splash from "../components/splash";
 export default function Index() {
   
   return (
-    <MyLayout>
+    <div>
       <Splash/>
       <Catalog/>
-    </MyLayout>
+      </div>
   );
 }
