@@ -2,8 +2,8 @@
 
 export default function Contact() {
   return (
-    <div>
-      <p>Fill the form below and I will contact you as soon as possible.</p>
+    <div className = "container">
+      <p className = "message">Fill the form below and I will contact you as soon as possible.</p>
       <form name="contact" method="POST" data-netlify="true">
       <p>
         <label>Name: <input type="text" name="name" /></label>   
@@ -21,6 +21,19 @@ export default function Contact() {
         <button type="submit">Send</button>
       </p>
     </form>
+    <style jsx>{`
+      .message {
+        padding: 20px;
+        font-weight: bold;
+      }
+      .container {
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        
+      }
+    `}</style>
   </div>
   );
 }

@@ -11,10 +11,11 @@ import Footer from "./Footer";
       <style jsx>{`
         .padding {
           height:10vh;
+          margin: 20px;
           width:100%;
         }
-        .layoutStyle {
-          padding: 20px;
+        .layoutStyle {S
+          min-height:100vh;
         }
       `}</style>
     </div>

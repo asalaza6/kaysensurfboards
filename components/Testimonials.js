@@ -40,6 +40,9 @@ function testimonialItem(test){
     return(
         <div key = {test.key} className = "item">
 <div className = "testimonial">{testimonial}</div>
+            <div className = "rating">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
             <div className = "name">{"- " + name}</div>
             <style jsx>{`
                 .item {
@@ -51,6 +54,10 @@ function testimonialItem(test){
                     border-radius: 20px;
                     margin-bottom: 20px;
                     padding: 10px;
+                }
+                .rating {
+                    text-align: right;
+                    font-size: 15pt;
                 }
                 .testimonial {
                     text-align: center;
