@@ -9,11 +9,10 @@ class Navbar extends React.Component {
 
   constructor(){
     super();
-    console.log("Creating new navbar");
     this.scrollTo = this.scrollTo.bind(this);
     this.nav = React.createRef();
     this.state = {
-      width: 600,
+      width: 500,
       height:0,
       mobile:false,
       open: false
@@ -31,12 +30,12 @@ class Navbar extends React.Component {
     
     if(this.nav.current.clientWidth < 550){
       this.setState({ mobile: true});
+      
     }else{
       this.setState({ mobile: false});
     }
   }
   componentWillUnmount(){
-    console.log("Deleting navbar");
       window.removeEventListener('resize', this.handleResize,false);
   }
   componentDidUpdate(){
@@ -47,6 +46,7 @@ class Navbar extends React.Component {
   }
   
   handleResize(){
+    
     this.setState({ width: this.nav.current.clientWidth});
     this.setState({ height: this.nav.current.clientHeight});
     

@@ -23,8 +23,10 @@ function mediaItem(test){
             <style jsx>{`
                 .link {
                     margin-left:20px;
+                    margin-right:20px;
                     font-size: 9pt;
                     color: rgb(100,100,100);
+                    word-wrap: break-word;
                 }
                 .info {
                     padding:10px;

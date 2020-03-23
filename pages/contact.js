@@ -12,7 +12,7 @@ export default function Contact() {
         <label>Email: <input type="email" name="email" /></label>
       </p>
       <p>
-        <label>Phone Number: <input type="email" name="email" /></label>
+        <label>Phone Number: <input type="tel" name="number" /></label>
       </p>
       <p>
         <label>Description: <textarea name="message"></textarea></label>

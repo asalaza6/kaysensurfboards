@@ -64,7 +64,7 @@ function boardItem(Board){
     );
 }
 export default function Catalog(){
-    console.log(Boards.toString());
+    //console.log(Boards.toString());
     return(
         <div style = {containerStyle}>
             {Boards.map(board=>boardItem(board))}
