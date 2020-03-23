@@ -40,7 +40,7 @@ function mediaItem(test){
 
 
 
-export default function Medias(){
+export default function MediaItems(){
     return(
         <div >
             {Media.map(media=>mediaItem(media))}

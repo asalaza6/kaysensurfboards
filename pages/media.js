@@ -1,5 +1,5 @@
 
-import Medias from '../components/Media';
+import Medias from '../components/MediaItems';
 
 export default function Media() {
   return (
