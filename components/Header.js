@@ -78,14 +78,15 @@ class Navbar extends React.Component {
           <div className = "logo">
           <img onClick = {()=>{this.openMenu()}} className = "img" src = {logo}></img> 
           </div>
-          <div className = "menu">
+          <div className = {this.state.open?"hue":null} id = "menu">
             <div className = "menuButton">
               <img onClick = {()=>{this.openMenu()}} className = "img" src = {menuButton}></img>  
             </div>
             {this.state.open ? 
-              <div>
+              <div className ="openedMenu">
                 <Link href = "/"><span onClick = {()=>{this.openMenu();this.scrollTo(0);}} className = "navMenuItem">Home</span></Link>
                 <Link href = "/about"><span onClick = {()=>{this.openMenu()}} className = "navMenuItem">About</span></Link>
+                <Link href = "/boards"><span onClick = {()=>{this.openMenu()}} className = "navMenuItem">Boards</span></Link>
                 <Link href = "/testimonials"><span onClick = {()=>{this.openMenu()}} className = "navMenuItem">Testimonials</span></Link>
                 <Link href = "/media"><span onClick = {()=>{this.openMenu()}} className = "navMenuItem">Media</span></Link>
                 <Link href = "/contact"><span onClick = {()=>{this.openMenu()}} className = "navMenuItem">Contact</span></Link>
@@ -95,53 +96,60 @@ class Navbar extends React.Component {
           </div>
         </div>
         :
-      <div id = "navInner">
+      <div  id = "navInner">
         <div className = "logo">
           <img onClick = {()=>{this.openMenu()}} className = "img" src = {logo}></img> 
         </div>
         <Link href = "/"><span className = "navItem">Home</span></Link>
         <Link href = "/about"><span className = "navItem">About</span></Link>
-        <Link href = "/testimonials"><span className = "navItem">Testimonials</span></Link>
+        <Link href = "/boards"><span className = "navItem">Boards</span></Link>
+        <Link href = "/testimonials"><span className = "navItem">Reviews</span></Link>
         <Link href = "/media"><span className = "navItem">Media</span></Link>
         <Link href = "/contact"><span className = "navItem">Contact</span></Link>
       </div>
       }
       <style jsx>{`
-        .menu {
-          top:20px;
+        @font-face {
+          font-family: 'Bungee';
+            src:url('/fonts/Bungee-Regular.otf');
+        }
+        .hue {
+          background-color: rgba(255,255,255, 0.8);
+        }
+        #menu {
           position: fixed;
+          z-index:999;
+          top: 20px;
+          left: 9px;    
         }
         .logo {
           height: 10vh;
         }
         .img {
-            height:100%;
-          }
-          .menuButton{
-            width: 30px;
-            height: 30px;
-          }
+          height:100%;
+        }
+        .menuButton{
+          width: 30px;
+          height: 30px;
+        }
         #navContainer {
-            margin: 20px;
+            width: 100%;
             right: 0;
             z-index: 1;
             left:0;
             top:0;
-            position: absolute;
-            height: 10vh;
+            height: calc(10vh+40px);
           }
           #navInner {
-            left:0;
-            border-bottom: 1pt #DDD solid;
             height: 10vh;
-            right: 20px;
-            left: 20px;
+            justify-content: center;
+            text-align: center;
             display:flex;
+            border-bottom: 1pt #DDD solid;
             flex-direction:row;
           }
           #navMobileInner {
             height: 10vh;
-            
             justify-content: center;
             text-align: center;
             display:flex;
@@ -162,8 +170,10 @@ class Navbar extends React.Component {
             -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
             @extend .normalText;
-          
-            
+            font-family: 'Bungee';
+          }
+          .normalText {
+            font-family: 'Bungee';
           }
           .navMenuItem {
             position: relative;
@@ -172,9 +182,8 @@ class Navbar extends React.Component {
             flex: 1;
             display: flex;
             color: black;
-            height:30px;
-            width: calc(100vw - 40px);
-            background-color: rgba(255,255,255, 0.8);
+            height:45px;
+            width: calc(100vw - 18px);
             border-bottom: .5pt #DDD solid;
             -webkit-touch-callout: none; /* iOS Safari */
             -webkit-user-select: none; /* Safari */
@@ -183,8 +192,11 @@ class Navbar extends React.Component {
             -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
             @extend .normalText;
-          
-            
+            font-family: 'Bungee';
+          }
+          .openedMenu {
+            border-radius: 25px;
+            overflow: hidden;
           }
       `}</style>
     </div>

@@ -51,14 +51,66 @@ function boardItem(Board){
     var imgSrc = Board.img;
     var key = Board.key;
     return(
-        <div key = {key} style = {boardItemStyle}>
+        <div key = {key} className = "container">
             
-            <div style = {boardNameStyle}>{name}</div>
-            {imgSrc ? <img style = {boardImgStyle} src = {require(""+imgSrc)}></img>:null}
-            <a style = {boardStyleStyle}>{"Style: " + style}</a>
-            <a style = {boardTechStyle}>{"Technology: " + tech}</a>
-            <a style = {boardDimStyle}>{"Dimensions: " + dimension}</a>
-            
+            <div  className = "name">{name}</div>
+            {imgSrc ? <img  className = "img" src = {require(""+imgSrc)}></img>:null}
+            <a  className = "style">{"Style: " + style}</a>
+            <a  className = "tech"> {"Technology: " + tech}</a>
+            <a  className = "dim">{"Dimensions: " + dimension}</a>
+            <style jsx>{`
+                @font-face {
+                    font-family: 'BalooThambi';
+                    src:url('/fonts/BalooThambi2-Regular.ttf');
+                    font-weight: bold;
+                    }
+                @font-face {
+                    
+                    font-family: 'BalooThambi-SemiBold';
+                    src:url('/fonts/BalooThambi2-SemiBold.ttf');
+                    }
+                }
+                .container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: center;
+                    margin: 10px;
+                }
+                .name {
+                    text-align: center;
+                    padding:10;
+                    font-size:24pt;
+                    font-family: 'BalooThambi-SemiBold';
+                }
+                .style  {
+                    text-align: center;
+                    padding:4;
+                    font-size:18pt;
+                    font-family: 'BalooThambi';
+                    
+                }
+                .tech  {
+                    text-align: center;
+                    padding:4;
+                    font-size:18pt;
+                    font-family: 'BalooThambi';
+                }
+                .dim  {
+                    text-align: center;
+                    padding:4;
+                    font-size:18pt;
+                    font-family: 'BalooThambi';
+                }
+                .img  {
+                    max-width:465;
+                    width:100%;
+                    border: 1px solid #DDD;
+                    border-radius:20px;
+                    
+                }
+                
+            `}</style>
         </div>
         
     );
@@ -66,8 +118,21 @@ function boardItem(Board){
 export default function Catalog(){
     //console.log(Boards.toString());
     return(
-        <div style = {containerStyle}>
+        <div className = "container">
             {Boards.map(board=>boardItem(board))}
+            <style jsx>{`
+                
+                .container {
+                    
+                    display: flex;
+                    flex-direction:row;
+                    justify-content:space-evenly;
+                    align-self:center;
+                    flex-wrap:wrap;
+                    max-width:1000;
+                    margin: auto;
+                }
+            `}</style>
         </div>
     );
 }

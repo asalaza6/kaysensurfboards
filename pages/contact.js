@@ -18,20 +18,27 @@ export default function Contact() {
         <label>Description: <textarea name="message"></textarea></label>
       </p>
       <p>
-        <button type="submit">Send</button>
+        <button type="submit">Submit</button>
       </p>
     </form>
     <style jsx>{`
+      @font-face {
+        font-family: 'BalooThambi';
+        src:url('/fonts/BalooThambi2-Regular.ttf');
+      }
+      @font-face {
+        font-family: 'BalooThambi-SemiBold';
+        src:url('/fonts/BalooThambi2-SemiBold.ttf');
+      }
       .message {
-        padding: 20px;
-        font-weight: bold;
+        font-family: 'BalooThambi-SemiBold';
       }
       .container {
+        font-family: 'BalooThambi';
         width: 100%;
         display:flex;
         flex-direction: column;
         align-items:center;
-        
       }
     `}</style>
   </div>

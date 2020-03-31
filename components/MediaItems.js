@@ -21,10 +21,21 @@ function mediaItem(test){
             </div>
             {/*<div className = "link">{"- " + Link}</div>*/}
             <style jsx>{`
+                @font-face {
+                    font-family: 'BalooThambi';
+                    src:url('/fonts/BalooThambi2-Regular.ttf');
+                    
+                    }
+                @font-face {
+                    font-family: 'BalooThambi-SemiBold';
+                    src:url('/fonts/BalooThambi2-SemiBold.ttf');
+                    }
+                }
                 .link {
                     margin-left:20px;
                     margin-right:20px;
                     font-size: 9pt;
+                    font-family: 'BalooThambi';
                     color: rgb(100,100,100);
                     word-wrap: break-word;
                 }
@@ -44,7 +55,7 @@ function mediaItem(test){
                 .title {
                     margin-left:20px;
                     font-size:20pt;
-                    font-weight: 600;
+                    font-family: 'BalooThambi-SemiBold';
                 }
                 .item{
                     border: #ddd .5pt solid;

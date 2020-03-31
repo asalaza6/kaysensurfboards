@@ -36,7 +36,6 @@ class Splash extends React.Component {
   }
   render(){
     return (
-        <div>
             <div style = {splash}>
                 <div style = {splashImgContainer}>
                 
@@ -44,7 +43,6 @@ class Splash extends React.Component {
                 </div>
                 
             </div>
-        </div>
   )
 }
 }

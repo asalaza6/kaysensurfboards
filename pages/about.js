@@ -15,25 +15,37 @@ const contain = {
 export default function About() {
   return (
       <div className = "container">
-        <p className = "topelement1">Chris Kaysen has been shaping surfboards in San Clemente for 35 years. With 100,000 boards and counting, you can trust Chris to shape a surfboard to fit your exact needs...</p>
-        <div className = "topelement2"><img className = "image" src = {frontalImage}></img></div>
+        <p className = "text">Chris Kaysen has been shaping surfboards in San Clemente for 35 years. With 100,000 boards and counting, you can trust Chris to shape a surfboard to fit your exact needs...</p>
+        <div className = "pciture"><img className = "image" src = {frontalImage}></img></div>
         <style jsx>{`
+           @font-face {
+            font-family: 'BalooThambi';
+            src:url('/fonts/BalooThambi2-Regular.ttf');
+          }
+          @font-face {
+              font-family: 'BalooThambi-SemiBold';
+              src:url('/fonts/BalooThambi2-SemiBold.ttf');
+              }
+          }
           .container{
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
           }
           .top{
             display: flex;
             flex-direction: row;
           }
-          .topelement1{
+          .text{
             flex: 3;
+            font-family: 'BalooThambi';
           }
-          .topelement2{
+          .picture{
             flex: 2;
           }
           .image {
+            max-width: 500px;
             width:100%;
           }
         `}</style>

@@ -39,12 +39,22 @@ function testimonialItem(test){
     var testimonial = test.testimonial;
     return(
         <div key = {test.key} className = "item">
-<div className = "testimonial">{testimonial}</div>
+            <div className = "testimonial">{testimonial}</div>
             <div className = "rating">
                 <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
             </div>
             <div className = "name">{"- " + name}</div>
             <style jsx>{`
+                @font-face {
+                    font-family: 'BalooThambi';
+                    src:url('/fonts/BalooThambi2-Regular.ttf');
+                    
+                    }
+                @font-face {
+                    font-family: 'BalooThambi-SemiBold';
+                    src:url('/fonts/BalooThambi2-SemiBold.ttf');
+                    }
+                }
                 .item {
                     display: flex;
                     flex-direction: column;
@@ -57,18 +67,19 @@ function testimonialItem(test){
                 }
                 .rating {
                     text-align: right;
-                    font-size: 15pt;
+                    font-size: 18pt;
                 }
                 .testimonial {
                     text-align: center;
                     padding:4px;
-                    font-size:10pt;
-                    
+                    font-size:15pt;
+                    font-family: 'BalooThambi';
                 }
                 .name {
                     text-align: right;
                     padding:10;
                     font-size:12pt;
+                    font-family: 'BalooThambi-SemiBold';
                 }
             `}</style>
         </div>
@@ -83,12 +94,10 @@ export default function Testimonials(){
         .containerStyle {
             display: flex;
             flex-direction: column;
-            justifyContent: space-evenly;
-            alignSelf: center;
-            flexWrap: wrap;
-            maxWidth: 1000;
-            margin: auto;
-            paddingTop: 20;
+            justify-content: space-evenly;
+            align-self: center;
+            max-width: 1000;
+            padding:10px;
         }
     `}</style>
         </div>
