@@ -4,23 +4,21 @@ export default function Contact() {
   return (
     <div className = "container">
       <p className = "message">Fill the form below and I will contact you as soon as possible.</p>
-      <form name="contact" method="POST" data-netlify="true">
-      <p>
-        <label>Name: <input type="text" name="name" /></label>   
-      </p>
-      <p>
-        <label>Email: <input type="email" name="email" /></label>
-      </p>
-      <p>
-        <label>Phone Number: <input type="tel" name="number" /></label>
-      </p>
-      <p>
-        <label>Description: <textarea name="message"></textarea></label>
-      </p>
-      <p>
-        <button type="submit">Submit</button>
-      </p>
-    </form>
+      <form netlify-honeypot='bot-field' name="contact" method="post" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
+          <p>
+            <label>Your Name: <input type="text" name="name"/></label>
+          </p>
+          <p>
+            <label>Your Email: <input type="email" name="email"/></label>
+          </p>
+          <p>
+            <label>Message: <textarea name="message"></textarea></label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
     <style jsx>{`
       @font-face {
         font-family: 'BalooThambi';
