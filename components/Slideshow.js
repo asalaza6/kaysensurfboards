@@ -1,9 +1,9 @@
 import React from 'react';
 const slideImages = [
-    'surf1.jpg',
-    'surf2.jpg',
-    'surf3.jpg',
-    'surf4.jpg'
+    'slideshow/surf1.jpg',
+    'slideshow/surf2.jpg',
+    'slideshow/surf3.jpg',
+    'slideshow/surf4.jpg'
 ];
 
 class Slideshow extends React.Component {

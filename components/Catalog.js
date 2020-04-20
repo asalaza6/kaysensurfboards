@@ -54,7 +54,7 @@ function boardItem(Board){
         <div key = {key} className = "container">
             
             <div  className = "name">{name}</div>
-            {imgSrc ? <img  className = "img" src = {require(""+imgSrc)}></img>:null}
+            {imgSrc ? <img  className = "img" src = {imgSrc}></img>:null}
             <a  className = "style">{"Style: " + style}</a>
             <a  className = "tech"> {"Technology: " + tech}</a>
             <a  className = "dim">{"Dimensions: " + dimension}</a>

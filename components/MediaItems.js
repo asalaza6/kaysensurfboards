@@ -13,7 +13,7 @@ function mediaItem(test){
         <div key = {test.key}  className = "item">
             
             <div className = "mediaImg">
-                {imgSrc ? <img onClick = {()=>window.open(Link)} className = "img" src = {require(""+imgSrc)}></img>:null}
+                {imgSrc ? <img onClick = {()=>window.open(Link)} className = "img" src = {imgSrc}></img>:null}
             </div>
             <div className = "info">
                 <div className = "title">{Title}</div>
