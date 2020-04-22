@@ -1,5 +1,4 @@
 
-import frontalImage from "../public/aboutfront.jpg"
 
 
 const imgStyle = {
@@ -16,7 +15,7 @@ export default function About() {
   return (
       <div className = "container">
         <p className = "text">Chris Kaysen has been shaping surfboards in San Clemente for 35 years. With 100,000 boards and counting, you can trust Chris to shape a surfboard to fit your exact needs...</p>
-        <div className = "pciture"><img className = "image" src = {frontalImage}></img></div>
+        <div className = "pciture"><img className = "image" src = {"boards/board1.jpg"}></img></div>
         <style jsx>{`
            @font-face {
             font-family: 'BalooThambi';

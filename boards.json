@@ -1,7 +1,7 @@
 [
   {
     "key":1,
-    "boardname":"Grim Reaper",
+    "boardname":"Model 1",
     "style":"shortboard",
     "technology":"futureflex",
     "dimension":"default",
@@ -9,7 +9,7 @@
   },
   {
     "key":2,
-    "boardname":"Blue Wave",
+    "boardname":"Model 2",
     "style":"fish",
     "technology":"hydroflex",
     "dimension":"default",
@@ -17,7 +17,7 @@
   },
   {
     "key":3,
-    "boardname":"Ennis 2",
+    "boardname":"Model 3",
     "style":"hybrid",
     "technology":"carbon",
     "dimension":"default",
@@ -25,7 +25,7 @@
   },
   {
     "key":4,
-    "boardname":"Jenkins",
+    "boardname":"Model 4",
     "style":"longboard",
     "technology":"polyurethane foam",
     "dimension":"default",
