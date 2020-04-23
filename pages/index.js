@@ -8,12 +8,14 @@ export default function Index() {
   
   return (
     <div>
+       <div className = "message">Website currently under construction</div>
       <Slideshow/>
 
-      <div className = "message">Website currently under construction</div>
+     
       <style jsx>{`
       .message {
-        
+        padding: 10px;
+        text-align: center;
         font-size:24pt;
       }`}</style>
     </div>
