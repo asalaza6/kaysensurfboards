@@ -1,0 +1,8 @@
+#!/bin/bash
+
+npm install
+npm run export
+sudo rm -r /var/www/html/*
+sudo mv out/* /var/www/html/
+
+sudo /etc/init.d/apache2 restart
