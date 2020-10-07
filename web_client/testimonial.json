@@ -1,0 +1,13 @@
+[
+    {
+      "key":1,
+      "desc":"Kaysen collection",
+      "image":"testimonials/test2.jpeg"
+    },
+    {
+        "key":2,
+        "name":"Surfing in Norway",
+        "testimonial":"images/test1.jpeg"
+    }
+]
+  
