@@ -1,8 +1,8 @@
-const DEVELOPMENT = true;
+const DEVELOPMENT = false;
 
 const configs = {
     reviews: {
-        location:DEVELOPMENT?"images/reviews/":"/var/www/html/images/reviews"
+        location:DEVELOPMENT?"images/reviews/":"/var/www/kaysensurfboards.net/images/reviews/"
     },
     loginInfo: {
         username: "test",

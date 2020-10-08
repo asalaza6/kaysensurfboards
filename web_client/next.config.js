@@ -24,4 +24,9 @@ module.exports = withPlugins([
     withImages,
     withCSS,
     withSlick,
-]);
+],{
+    trailingSlash:true,
+    env: {
+        jwtSecret: "cat123"
+    }
+});

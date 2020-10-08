@@ -3,7 +3,29 @@
 cd web_client
 npm install
 npm run export
-sudo rm -r /var/www/html/*
-sudo mv out/* /var/www/html/
+sudo rm -r /var/www/kaysensurfboards.net/*
+sudo mv out/* /var/www/kaysensurfboards.net/
+
+sudo mkdir /var/www/kaysensurfboards.net/images
+sudo chown -R ubuntu /var/www/kaysensurfboards.net/images
+
+sudo mkdir  /var/www/kaysensurfboards.net/images/reviews
+sudo chown -R ubuntu /var/www/kaysensurfboards.net/images/reviews
+cd /var/www/kaysensurfboards.net
+echo "creating images directory"
+sudo cat > .htaccess <<- "EOF"
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /subdirectory
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule . /index.html [L]
+</IfModule>
+
+EOF
+echo "creating .htaccess file"
 
 sudo /etc/init.d/apache2 restart

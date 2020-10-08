@@ -1,5 +1,5 @@
 CREATE DATABASE kaysen;
-
+\c kaysen
 --create extension 
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
@@ -10,7 +10,8 @@ CREATE TABLE reviews(
     uuid_generate_v4(),
     review_contents VARCHAR(255) NOT NULL,
     review_name VARCHAR(255) NOT NULL,
-    image_type VARCHAR(255) NOT NULL
+    image_type VARCHAR(255) NOT NULL,
+    approved BOOLEAN DEFAULT false
 );
 
 --create comments table

@@ -24,12 +24,13 @@ app.listen(serverPort, ()=>{
 });
 
 //experimental https continued
-// let httpsPort = 8081;
-// const httpsServer = https.createServer({
-//     key: fs.readFileSync('/home/ubuntu/relevant_certs/privkey.pem'),
-//     cert: fs.readFileSync('/home/ubuntu/relevant_certs/fullchain.pem'),
-// },app);
-// httpsServer.listen(httpsPort,()=>{
-//    console.log(`HTTPS Server running on port ${httpsPort}`);
-// });
+let httpsPort = 8081;
+const httpsServer = https.createServer({
+    key: fs.readFileSync('/home/ubuntu/relevant_certs/privkey.pem'),
+cert: fs.readFileSync('/home/ubuntu/relevant_certs/fullchain.pem'),
+},app);
+
+httpsServer.listen(httpsPort,()=>{
+    console.log(`HTTPS Server running on port ${httpsPort}`);
+});
 //

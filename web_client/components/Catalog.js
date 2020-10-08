@@ -1,4 +1,5 @@
 import Boards from "../boards.json";
+import configs from "../config.js";
 
 const boardItemStyle = {
     display: "flex",
@@ -54,7 +55,7 @@ function boardItem(Board){
         <div key = {key} className = "container">
             
             <div  className = "name">{name}</div>
-            {imgSrc ? <img  className = "img" src = {imgSrc}></img>:null}
+            {imgSrc ? <img  className = "img" src = {configs.images.location+imgSrc}></img>:null}
             <a  className = "style">{"Style: " + style}</a>
             <a  className = "tech"> {"Technology: " + tech}</a>
             <a  className = "dim">{"Dimensions: " + dimension}</a>
