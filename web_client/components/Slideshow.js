@@ -1,16 +1,16 @@
 import React from 'react';
 const slideImages = [
-    {image: 'slideshow/surf1.jpeg',
+    {image: '/images/slideshow/surf1.jpeg',
     desc: 'desc here'},
-    {image: 'slideshow/surf2.jpeg',
+    {image: '/images/slideshow/surf2.jpeg',
     desc: 'desc here'},
-    {image: 'slideshow/surf3.jpeg',
+    {image: '/images/slideshow/surf3.jpeg',
     desc: 'desc here'},
-    {image: 'slideshow/surf4.jpeg',
+    {image: '/images/slideshow/surf4.jpeg',
     desc: 'desc here'},
-    {image: 'slideshow/surf5.jpeg',
+    {image: '/images/slideshow/surf5.jpeg',
     desc: 'desc here'},
-    {image: 'slideshow/surf6.jpeg',
+    {image: '/images/slideshow/surf6.jpeg',
     desc: 'desc here'}
 ];
 

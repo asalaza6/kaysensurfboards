@@ -1,13 +1,15 @@
 [
     {
       "key":1,
-      "desc":"Kaysen collection",
-      "image":"testimonials/test2.jpeg"
+      "review_contents":"Kaysen collection",
+      "image":"/images/testimonials/test2.jpeg",
+      "review_name":""
     },
     {
         "key":2,
-        "name":"Surfing in Norway",
-        "testimonial":"images/test1.jpeg"
+        "review_contents":"Surfing in Norway",
+        "image":"/images/testimonials/test1.jpeg",
+        "review_name":""
     }
 ]
   

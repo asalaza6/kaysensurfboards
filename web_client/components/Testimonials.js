@@ -2,6 +2,7 @@ import Testimonial from "../testimonial.json";
 import { Component, useState } from "react";
 import configs from "../config";
 import PropTypes from 'prop-types';
+
 const testItemStyle = {
     display: "flex",
     flexDirection: "column",
@@ -152,13 +153,15 @@ function approveItem(test,index){
     );
 }
 
-function testimonialItem(test,index){
+function testimonialItem(test,index,location=null){
     var name = test.review_name;
     var testimonial = test.review_contents;
-    console.log(configs.images.location+"reviews/"+test.review_id+"."+test.image_type);
+    if(!location){
+        var location = configs.images.location+"reviews/"+test.review_id+"."+test.image_type;
+    }
     return(
         <div key = {index} className = "item">
-            <img className = "image" alt="review image" src = {configs.images.location+"reviews/"+test.review_id+"."+test.image_type}/>
+            <img className = "image" alt="review image" src = {location}/>
             <div className = "testimonial">{testimonial}</div>
             {/*<div className = "rating">
                 <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
@@ -237,9 +240,10 @@ export default class Testimonials extends Component{
         }
     }
     render(){
-        console.log(this.props.route=="approve");
+        console.log(this.props);
         return(
             <div className = "containerStyle">
+                {this.props.route == "reviews"?Testimonial.map((test,index)=>{console.log(test);return(testimonialItem(test,index,test.image))}):null}
                 {this.state.reviews.map((test,index)=>(this.props.route=="approve"?approveItem(test,index):testimonialItem(test,index)))}
                 {this.props.route == "approve" && this.state.reviews.length == 0?"No reviews to Approve right now!":null}
         <style jsx >{`

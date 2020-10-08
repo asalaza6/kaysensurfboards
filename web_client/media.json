@@ -3,39 +3,39 @@
       "key":1,
       "mediatitle":"Breaking the Mold",
       "link":"https://www.sanclementetimes.com/breaking-the-mold/",
-      "img":"media/media1.png"
+      "img":"/images/media/media1.png"
     },
     {
       "key":2,
       "mediatitle":"Statement Magazine",
       "link":"https://www.statementsmagazine.com/kaysensurfboards",
-      "img":"media/media2.webp"
+      "img":"/images/media/media2.webp"
     },
     {
       "key":3,
       "mediatitle":"Instagram",
       "link":"https://www.instagram.com/kaysensurfboards/?hl=en",
-      "img":"media/media3.png"
+      "img":"/images/media/media3.png"
     },
     {
      "key":4,
      "mediatitle":"Kaysen surfboards makes the boards for Teen Choice Awards on Nickelodeon",
      "link":null,
-     "img":"media/media4.jpeg"
+     "img":"/images/media/media4.jpeg"
     },
     
     {
       "key":5,
       "mediatitle":"Chris Kaysen, Gerry Lopez, Maurice Cole (left to right)",
       "link":null,
-      "img":"media/media5.jpeg"
+      "img":"/images/media/media5.jpeg"
      },
      
     {
       "key":6,
       "mediatitle":"Chris Kaysen, Gerry Lopez, Maurice Cole (left to right)",
       "link":null,
-      "img":"media/media6.jpeg"
+      "img":"/images/media/media6.jpeg"
      }
 ]
   
