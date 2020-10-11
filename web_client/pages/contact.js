@@ -55,6 +55,8 @@ export default class Contact extends Component {
       'user_28Cp9KA58qJxKIBG6ylwS'
       ).then((result) => {
         console.log(result.text);
+        alert("Message sent. Thank you!");
+        window.location = ""
     }, (error) => {
         console.log(error.text);
     });
