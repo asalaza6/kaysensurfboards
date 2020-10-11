@@ -8,22 +8,22 @@ const bioImages = [
   {
     file:"/images/bio/bio2.jpeg",
     desc:"sample description",
-    style:"right"
+    style:"bottom"
   },
   {
     file:"/images/bio/bio3.jpeg",
     desc:"sample description for biography/ about page.",
-    style:"bottom"
+    style:"right"
   },
   {
     file:"/images/bio/bio4.jpeg",
     desc:"sample description for biography/ about page.",
-    style:"left"
+    style:"bottom"
   },
   {
     file:"/images/bio/bio5.jpeg",
     desc:"sample description for biography/ about page.",
-    style:"right"
+    style:"left"
   },
   {
     file:"/images/bio/bio6.jpeg",
@@ -33,7 +33,7 @@ const bioImages = [
   {
     file:"/images/bio/bio7.jpeg",
     desc:"sample description for biography/ about page.",
-    style:"left"
+    style:"right"
   },
   {
     file:"/images/bio/bio8.jpeg",
@@ -43,7 +43,7 @@ const bioImages = [
   {
     file:"/images/bio/bio9.jpeg",
     desc:"sample description for biography/ about page.",
-    style:"right"
+    style:"left"
   },
 ]
 
@@ -106,7 +106,7 @@ export default function About() {
           .text{
             padding:5px;
             flex: 1;
-
+            justify-content: center;
             display: flex;
             font-family: 'BalooThambi';
             align-items: center;

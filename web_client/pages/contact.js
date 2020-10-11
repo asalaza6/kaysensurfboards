@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import configs from '../config';
+import emailjs from 'emailjs-com';
 export default class Contact extends Component {
   constructor(){
     super();
@@ -9,7 +10,7 @@ export default class Contact extends Component {
       message: "",
     }
     this.onSubmit = this.onSubmit.bind(this);
-    
+    this.sendEmail = this.sendEmail.bind(this);
     this.onChange = this.onChange.bind(this);
   }
   async onSubmit(){
@@ -45,22 +46,37 @@ export default class Contact extends Component {
       this.setState({"message":evt.target.value});
     }
   }
+  sendEmail(evt){
+    evt.preventDefault();
+    console.log(evt.target);
+    emailjs.sendForm('service_ryt0zoo',
+      'template_7h0wmmb',
+      evt.target,
+      'user_28Cp9KA58qJxKIBG6ylwS'
+      ).then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
+    return false;
+  }
   render(){
     return (
       <div className = "container">
         <p className = "message">Fill the form below and I will contact you as soon as possible.</p>
-        <form  name="contact">
+        <form  name="contact" onSubmit = {evt =>{return this.sendEmail(evt)}}>
             <input type="hidden" name="form-name" value="contact" />
             <p>
-              <label>Your Name: <input onInput = {(evt)=>this.onChange(evt,"name")} type="text" name="name"/></label>
+              <label>Your Name: <input type="text" name="user_name" onInput = {(evt)=>this.onChange(evt,"name")} type="text" name="name"/></label>
             </p>
             <p>
-              <label>Your Email: <input onInput = {(evt)=>this.onChange(evt,"email")} type="email" name="email"/></label>
+              <label>Your Email: <input type="email" name="user_email" onInput = {(evt)=>this.onChange(evt,"email")} type="email" name="email"/></label>
             </p>
             <p>
-              <label>Message: <textarea onInput = {(evt)=>this.onChange(evt,"message")} name="message"></textarea></label>
+              <label>Message: <textarea type="message" name="message" onInput = {(evt)=>this.onChange(evt,"message")} name="message"></textarea></label>
             </p>
             <p>
+              <input type="submit" value="emailjs"/>
               <button type="button" onClick = {this.onSubmit}>Send</button>
             </p>
           </form>
