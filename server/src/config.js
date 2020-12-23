@@ -1,4 +1,4 @@
-const DEVELOPMENT = true;
+const DEVELOPMENT = false;
 
 const configs = {
     dev:DEVELOPMENT,

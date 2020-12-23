@@ -1,5 +1,5 @@
-const DEVELOPMENT = true;
-const secure = false;
+const DEVELOPMENT = false;
+const secure = true;
 const imagesPort = 4000;
 const serverPort = 3000;
 //serve images with python server on port 4000 using the following command
