@@ -35,7 +35,7 @@ And here's the content.
         }
 
         .markdown h3 {
-          margin: 0;
+          margin: 0px;
           padding: 0;
           text-transform: uppercase;
         }

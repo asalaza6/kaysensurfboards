@@ -1,8 +1,8 @@
 const Pool = require('pg').Pool
-
+//password for server is 1234!@#$
 const pool = new Pool({
     user: "postgres",
-    password: "1234!@#$",
+    password: "hippomeat21",
     host: "localhost",
     port: 5432,
     database: "kaysen"

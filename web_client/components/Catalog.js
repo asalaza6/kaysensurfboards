@@ -13,8 +13,7 @@ const containerStyle = {
     justifyContent:"space-evenly",
     alignSelf:"center",
     flexWrap:"wrap",
-    maxWidth:1000,
-    margin: "auto"
+    maxWidth:1000
 }
 const boardNameStyle = {
     textAlign: "center",
@@ -55,7 +54,7 @@ function boardItem(Board){
         <div key = {key} className = "container">
             
             <div  className = "name">{name}</div>
-            {imgSrc ? <img  className = "img" src = {configs.images.location+imgSrc}></img>:null}
+            {imgSrc ? <img  className = "img" src = {imgSrc}></img>:null}
             <a  className = "style">{"Style: " + style}</a>
             <a  className = "tech"> {"Technology: " + tech}</a>
             <a  className = "dim">{"Dimensions: " + dimension}</a>

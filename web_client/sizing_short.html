@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://vavoomdesign.com/gf/guild_factor_sb.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Floatation Chart - Short Board</title>
+	<link rel="SHORTCUT ICON" href="https://vavoomdesign.com/gf/favicon.ico">
+	<script src="./Floatation Chart - Short Board_files/jquery-1.9.1.js.download"></script>
+	<script type="text/javascript" src="./Floatation Chart - Short Board_files/gf_obf2.js.download"></script>
+
+	<style type="text/css">
+	@font-face
+	{
+		font-family: testFont;
+		src: url(Beon-Regular.otf);
+	}
+	body
+	{
+		height: 90%;
+		font-family: testFont;
+	}
+	#gf
+	{
+		/*border: 1px solid #000;*/
+		background-color:#dddddd;
+	}
+	#guildfactor
+	{
+		margin: 0 auto;
+	}
+	footer
+	{
+		font-size: 18px;
+	}
+	</style>
+<style type="text/css">
+:root #top-leaderboard
+{ display: none !important; }</style></head>
+
+<body>
+<script>
+$(document).ready( function() 
+{
+	//set the container size
+	$("#gf").height(500);
+	$("#gf").width( $("#gf").height()/1.275);
+	
+	var gf = guild_chart_init( "sb", "guildfactor");
+	$("#gf").css("background",gf["background-color"]);
+});
+</script>
+
+<header>
+<b>Surfboard Flotation Chart</b>
+</header>
+
+<!--<input type="checkbox" onChange="mouseoff = !mouseoff;">Lock Graph<br>-->
+
+<div id="gf" style="height: 500px; width: 392.157px; background: rgb(189, 216, 242);">
+<canvas id="guildfactor" height="500" width="392">
+	<p>View the innovative surfboard skill level vs volume chart with a HTML5 browser</p>
+</canvas>
+</div>
+
+<div>
+	<a href="https://vavoomdesign.com/gf/guild_factor_lb.htm">Long Board</a>
+</div>
+
+<footer style="font-size:10px;">
+all rights reserved©, Whitney Guild 2013
+</footer>
+
+
+
+
+
+</body></html>

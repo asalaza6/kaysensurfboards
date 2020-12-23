@@ -7,11 +7,13 @@ import Footer from "./Footer";
       <Header />
       {props.children}
       <Footer/>
-      <style jsx>{`
+      <style jsx global>{`
         .layoutStyle {
           display:flex;
           flex-direction: column;
-          min-height: 98vh;
+          margin: 0px;
+          height: 100vh;
+          justify-content:space-between;
         }
       `}</style>
     </div>

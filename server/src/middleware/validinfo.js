@@ -22,6 +22,6 @@ module.exports = function(req, res, next) {
         // return res.json("Invalid Email");
       }
     }
-  
+    console.log("done validating info");
     next();
   };

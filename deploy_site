@@ -3,14 +3,18 @@
 cd web_client
 npm install
 npm run export
+#move out images folder before deleting content
+sudo mv /var/www/kaysensurfboards.net/images /var/www/images
+#delete old contents
 sudo rm -r /var/www/kaysensurfboards.net/*
+#replace contents
 sudo mv out/* /var/www/kaysensurfboards.net/
-
-sudo mkdir /var/www/kaysensurfboards.net/images
+#move back images folder to correct folder
+sudo mv /var/www/images /var/www/kaysensurfboards/images
+#make sure ownership is correct
 sudo chown -R ubuntu /var/www/kaysensurfboards.net/images
-
-sudo mkdir  /var/www/kaysensurfboards.net/images/reviews
 sudo chown -R ubuntu /var/www/kaysensurfboards.net/images/reviews
+#create .htaccess file
 cd /var/www/kaysensurfboards.net
 echo "creating images directory"
 sudo cat > .htaccess <<- "EOF"
@@ -27,5 +31,5 @@ RewriteRule . /index.html [L]
 
 EOF
 echo "creating .htaccess file"
-
+#restart 
 sudo /etc/init.d/apache2 restart

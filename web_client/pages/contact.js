@@ -12,30 +12,6 @@ export default class Contact extends Component {
     this.sendEmail = this.sendEmail.bind(this);
     this.onChange = this.onChange.bind(this);
   }
-  // async onSubmit(){
-  //   console.log(this.state);
-  //   let body = {
-  //     email: this.state.email,
-  //     name: this.state.name,
-  //     message: this.state.message
-  //   }
-  //   try{
-  //     const response = await fetch(`${configs.api.url}:${configs.api.port}/dashboard/contact`,{
-  //         method: "POST",
-  //         headers:{
-  //             token: localStorage.token,
-  //             "Content-Type": "application/json",
-  //         },
-  //         body: JSON.stringify(body)
-  //     });
-  //     const parseRes = await response.json();
-  //     console.log(parseRes);
-  //     alert('image successfully uploaded');
-  //     window.location = "/";
-  // }catch(err){
-  //     console.log(err.message);
-  // }
-  // }
   onChange(evt,type){
     if(type == "name"){
       this.setState({"name":evt.target.value});

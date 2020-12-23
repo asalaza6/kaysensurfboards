@@ -23,14 +23,14 @@ const Login = ({setAuth})=>{
 
         try{
             const body = {username,password};
-            //console.log(body);
+            console.log(body);
             const response = await fetch(`${configs.api.url}:${configs.api.port}/auth/login`,
                 {
                     method: "POST",
                     headers: {"Content-Type": "application/json"},
                     body: JSON.stringify(body)
                 });
-
+                
             const parseRes = await response.json();
             if(parseRes.token){
                 localStorage.setItem("token", parseRes.token);
@@ -39,7 +39,8 @@ const Login = ({setAuth})=>{
                 setAuth(true);
                 toast.success("login successful");
             }else{
-                alert("login failed");                toast.error(parseRes);
+                alert("login failed");                
+                toast.error(parseRes);
             }
             
         }catch(err){

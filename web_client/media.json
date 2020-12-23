@@ -12,28 +12,20 @@
       "img":"/images/media/media2.webp"
     },
     {
-      "key":3,
-      "mediatitle":"Instagram",
-      "link":"https://www.instagram.com/kaysensurfboards/?hl=en",
-      "img":"/images/media/media3.png"
-    },
-    {
      "key":4,
-     "mediatitle":"Kaysen surfboards makes the boards for Teen Choice Awards on Nickelodeon",
+     "mediatitle":"Kaysen Surfboards colab with Nickelodeon for Teen Choice Awards",
      "link":null,
      "img":"/images/media/media4.jpeg"
     },
-    
     {
       "key":5,
       "mediatitle":"Chris Kaysen, Gerry Lopez, Maurice Cole (left to right)",
       "link":null,
       "img":"/images/media/media5.jpeg"
-     },
-     
+     }, 
     {
       "key":6,
-      "mediatitle":"Chris Kaysen, Gerry Lopez, Maurice Cole (left to right)",
+      "mediatitle":"Gerry Lopez, Maurice Cole and Chris Kaysen (left to right)",
       "link":null,
       "img":"/images/media/media6.jpeg"
      }

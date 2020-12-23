@@ -1,6 +1,7 @@
-const DEVELOPMENT = false;
-const secure = true;
+const DEVELOPMENT = true;
+const secure = false;
 const imagesPort = 4000;
+const serverPort = 3000;
 //serve images with python server on port 4000 using the following command
 //on the images folder in the server
 //python -m http.server 4000

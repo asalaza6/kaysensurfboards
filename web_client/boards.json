@@ -5,7 +5,7 @@
     "style":"shortboard",
     "technology":"futureflex",
     "dimension":"default",
-    "img":"boards/board1.jpg"
+    "img":"/images/boards/board1.jpg"
   },
   {
     "key":2,
@@ -13,7 +13,7 @@
     "style":"fish",
     "technology":"hydroflex",
     "dimension":"default",
-    "img":"boards/board2.jpg"
+    "img":"/images/boards/board2.jpg"
   },
   {
     "key":3,
@@ -21,7 +21,7 @@
     "style":"hybrid",
     "technology":"carbon",
     "dimension":"default",
-    "img":"boards/board3.jpg"
+    "img":"/images/boards/board3.jpg"
   },
   {
     "key":4,
@@ -29,6 +29,6 @@
     "style":"longboard",
     "technology":"polyurethane foam",
     "dimension":"default",
-    "img":"boards/board4.jpg"
+    "img":"/images/boards/board4.jpg"
   }
 ]

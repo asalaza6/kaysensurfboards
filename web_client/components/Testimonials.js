@@ -217,8 +217,8 @@ function testimonialItem(test,index,location=null){
 }
 export default class Testimonials extends Component{
     
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {
             reviews:[]
         }
@@ -233,14 +233,15 @@ export default class Testimonials extends Component{
             });
             const parseRes = await response.json();
             console.log(parseRes.rows);
-            this.setState({reviews:parseRes.rows});
+            if(parseRes.rows){
+                this.setState({reviews:parseRes.rows});
+            }
             
         }catch(err){
             console.log(err.message);
         }
     }
     render(){
-        console.log(this.props);
         return(
             <div className = "containerStyle">
                 {this.props.route == "reviews"?Testimonial.map((test,index)=>{console.log(test);return(testimonialItem(test,index,test.image))}):null}

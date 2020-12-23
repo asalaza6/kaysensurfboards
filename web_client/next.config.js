@@ -3,6 +3,7 @@ const withImages = require('next-images')
 const withCSS = require("@zeit/next-css");
 const withSlick = require('react-slick')
 const withPlugins = require('next-compose-plugins')
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 if (typeof require !== "undefined") {
   require.extensions[".css"] = file => {};
 }
@@ -23,10 +24,10 @@ module.exports = withPlugins([
     withFonts,
     withImages,
     withCSS,
-    withSlick,
+    withSlick
 ],{
     trailingSlash:true,
     env: {
         jwtSecret: "cat123"
-    }
+    },
 });
