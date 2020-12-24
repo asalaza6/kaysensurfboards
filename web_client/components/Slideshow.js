@@ -1,7 +1,7 @@
 import React from 'react';
 const slideImages = [
     {image: '/images/slideshow/surf1.jpeg',
-    desc: 'desc here'},
+    desc: 'very long description here. lets see how this works. very long description here. lets see how this works. very long description here. lets see how this works. very long description here. lets see how this works. very long description here. lets see how this works. very long description here. lets see how this works. '},
     {image: '/images/slideshow/surf2.jpeg',
     desc: 'desc here'},
     {image: '/images/slideshow/surf3.jpeg',
@@ -62,15 +62,18 @@ class Slideshow extends React.Component {
     this.stopInterval();
   }
 
+  
+
   render(){
     return (
         <div className = "navContainer">
-                {this.state.selected?<div className = "imageOpen" onClick = {()=>{this.setState({selected:false});this.startInterval();}}>
+                {this.state.selected?
+                <div className = "imageOpen" onClick = {()=>{this.setState({selected:false});this.startInterval();}}>
                     <div className = "imgOpenImg">
-                        <div className = "imgOpenDesc">
-                            <img className = "img2" src = {slideImages[this.state.position].image}/>
-                            {slideImages[this.state.position].desc}
-                        </div>
+                        <img className = "img" src = {slideImages[this.state.position].image}/>
+                    </div>
+                    <div className="imageOpenDesc">
+                        {slideImages[this.state.position].desc}
                     </div>
                 </div>:null}
                 <div className = "slideshow">
@@ -118,26 +121,19 @@ class Slideshow extends React.Component {
                 .imageOpen {
                     
                     position: fixed;
-                    align-items:center;
                     width:100%;
+                    padding:20px;
                     height:100%;
                     left: 0;
                     top: 0;
+                    overflow-y:scroll;
+                    overflow-x:hidden;
+                    display:flex;
+                    flex-direction:column;
                     z-index:3;
-                    background-color: rgba(200,200,200,.7);
+                    background-color: rgba(255,255,255,.9);
                 }
-                .imgOpenImg {
-                    display: flex;
-                    flex-direction: column;
-                    align-items:center;
-                    justify-content: center;
-                    margin: 2vh 2vh 2vw 2vw;
-                    overflow: hidden;
-                    border:1pt black solid;
-                    height:96vh;
-                    width: 96vw;
-                }
-                .imgOpenDesc {
+                .imageOpenDesc {
                     font-size: 30pt;
                     color: black;
                     font-family: 'BalooThambi';
@@ -156,9 +152,12 @@ class Slideshow extends React.Component {
                     justify-content: center;
                     align-content: center;
                     text-align: center;
+                    
                 }
                 .img {
                     width: 100%;
+                    
+                    max-width: 700px;
                 }
                 .img2 {
                     flex-shrink: 0;

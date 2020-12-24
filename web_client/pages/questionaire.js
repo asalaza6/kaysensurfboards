@@ -44,49 +44,49 @@ export default class Contact extends Component {
         <form className = "form" name="contact" onSubmit = {evt =>{return this.sendEmail(evt)}}>
             <input type="hidden" name="form-name" value="contact" />
             <label>Name: 
-              <br/><input size = "30" type="text" name="first_name"  placeholder="First"/>
-              <input size = "30" type="text" name="last_name" placeholder="Last"/></label>
+              <br/><input className ="nameText" type="text" name="first_name"  placeholder="First"/>
+              <input className ="nameText" type="text" name="last_name" placeholder="Last"/></label>
             <label>Email: 
-              <br/><input size = "60" type="email" name="user_email" /></label>
+              <br/><input className ="inputText" type="email" name="user_email" /></label>
             
             <label>If you already have a model, size and/or construction in mind, let us know and we can work with that in addition to the info below to make sure we're all on the right track: 
-              <br/><input size = "60" type="text" name="q1"/></label>
+              <br/><input className ="inputText" type="text" name="q1"/></label>
             
             <label>What is your age, height and weight?
-              <br/><input size = "60" type="text" name="q2"/></label>
+              <br/><input className ="inputText" type="text" name="q2"/></label>
             
             <label>Any physical limitations?
-              <br/><input size = "60" type="text" name="q3"/></label>
+              <br/><input className ="inputText" type="text" name="q3"/></label>
             
             <label>How many years have you been surfing?
-              <br/><input size = "60" type="text" name="q4"/></label>
+              <br/><input className ="inputText" type="text" name="q4"/></label>
             
             <label>How often do you surf?
-              <br/><input size = "60" type="text" name="q5"/></label>
+              <br/><input className ="inputText" type="text" name="q5"/></label>
             
             <label>Where mostly?
-              <br/><input size = "60" type="text" name="q6"/></label>
+              <br/><input className ="inputText" type="text" name="q6"/></label>
             
             <label>What is the make, model, construction, and dimensions with volume (if you have it) of your current board(s)?
-              <br/><input size = "60" type="text" name="q7"/></label>
+              <br/><input className ="inputText" type="text" name="q7"/></label>
             
             <label>Which do you consider your daily driver?
-              <br/><input size = "60" type="text" name="q8"/></label>
+              <br/><input className ="inputText" type="text" name="q8"/></label>
             
             <label>Does your current board float you just right, too much or not enough?
-              <br/><input size = "60" type="text" name="q9"/></label>
+              <br/><input className ="inputText" type="text" name="q9"/></label>
             
             <label>What in your new board would you like to improve or maintain?
-              <br/><input size = "60" type="text" name="q10"/></label>
+              <br/><input className ="inputText" type="text" name="q10"/></label>
             
             <label>What size wave range and conditions are we targeting?
-              <br/><input size = "60" type="text" name="q11"/></label>
+              <br/><input className ="inputText" type="text" name="q11"/></label>
             
             <label>Are you replacing your current board for the waves you describe or are you wanting one that will complement your current board in the targeted wave range?
-              <br/><input size = "60" type="text" name="q12"/></label>
+              <br/><input className ="inputText" type="text" name="q12"/></label>
             
             <label>Comments, concerns or general info
-              <br/><input size = "60" type="text" name="q13"/></label>
+              <br/><input className ="inputText" type="text" name="q13"/></label>
       
             <br/><input size = "60" type="submit" value="Send"/>
           </form>
@@ -103,6 +103,16 @@ export default class Contact extends Component {
           @font-face {
             font-family: 'BalooThambi-SemiBold';
             src:url('/fonts/BalooThambi2-SemiBold.ttf');
+          }
+          .inputText {
+            width:100%;
+            height:20px;
+            border: 1pt black solid;
+          }
+          .nameText {
+            width:49%;
+            height:20px;
+            border: 1pt black solid;
           }
           .message {
             font-family: 'BalooThambi-SemiBold';
