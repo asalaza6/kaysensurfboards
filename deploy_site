@@ -8,9 +8,10 @@ sudo mv /var/www/kaysensurfboards.net/images /var/www/images
 #delete old contents
 sudo rm -r /var/www/kaysensurfboards.net/*
 #replace contents
+sudo rm -r out/images
 sudo mv out/* /var/www/kaysensurfboards.net/
 #move back images folder to correct folder
-sudo mv /var/www/images /var/www/kaysensurfboards/images
+sudo mv /var/www/images /var/www/kaysensurfboards.net/
 #make sure ownership is correct
 sudo chown -R ubuntu /var/www/kaysensurfboards.net/images
 sudo chown -R ubuntu /var/www/kaysensurfboards.net/images/reviews
