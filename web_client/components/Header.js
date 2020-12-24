@@ -144,7 +144,19 @@ class Navbar extends React.Component {
               <div className ="openedMenu">
                 <Link href = "/"><span onClick = {()=>{this.openMenu();this.scrollTo(0);}} className = "navMenuItem">Home</span></Link>
                 <Link href = "/about"><span onClick = {()=>{this.openMenu()}} className = "navMenuItem">About</span></Link>
-                <Link href = "/boards"><span onClick = {()=>{this.openMenu()}} className = "navMenuItem">Surfboards</span></Link>
+                <div onClick={()=>{this.dropMenu()}}>
+                  <span className = "navMenuItem">Surfboards</span>
+                  {this.state.dropOpen ? 
+                    <div>
+                      <Link href = "/boards"><span onClick = {()=>{this.dropMenu();this.scrollTo(0);}} className = "navMenuItem">Categories</span></Link>
+                      <Link href = "/technology"><span onClick = {()=>{this.dropMenu()}} className = "navMenuItem">Technology</span></Link>
+                      <Link href = "/questionaire"><span onClick = {()=>{this.dropMenu()}} className = "navMenuItem">Sizing Questionnaire</span></Link>
+                      <Link href = "/calculator"><span onClick = {()=>{this.dropMenu()}} className = "navMenuItem">Volume Calculator</span></Link>
+                    </div>
+                  :
+                    null
+                  }
+                </div>
                 <Link href = "/testimonials"><span onClick = {()=>{this.openMenu()}} className = "navMenuItem">Testimonials</span></Link>
                 <Link href = "/media"><span onClick = {()=>{this.openMenu()}} className = "navMenuItem">Media</span></Link>
                 <Link href = "/contact"><span onClick = {()=>{this.openMenu()}} className = "navMenuItem">Contact</span></Link>
