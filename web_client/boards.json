@@ -1,34 +1,57 @@
-[
-  {
-    "key":1,
-    "boardname":"Model 1",
-    "style":"shortboard",
-    "technology":"futureflex",
-    "dimension":"default",
-    "img":"/images/boards/board1.jpg"
-  },
-  {
-    "key":2,
-    "boardname":"Model 2",
-    "style":"fish",
-    "technology":"hydroflex",
-    "dimension":"default",
-    "img":"/images/boards/board2.jpg"
-  },
-  {
-    "key":3,
-    "boardname":"Model 3",
-    "style":"hybrid",
-    "technology":"carbon",
-    "dimension":"default",
-    "img":"/images/boards/board3.jpg"
-  },
-  {
-    "key":4,
-    "boardname":"Model 4",
-    "style":"longboard",
-    "technology":"polyurethane foam",
-    "dimension":"default",
-    "img":"/images/boards/board4.jpg"
-  }
-]
+  {"shortboard":[
+    {
+      "key":0,
+      "boardname":"Model 1",
+      "style":"shortboard",
+      "technology":"futureflex",
+      "dimension":"default",
+      "img":"/images/boards/board1.jpg"
+    }
+  ],
+  "fish":[
+    {
+      "key":0,
+      "boardname":"Model 2",
+      "style":"fish",
+      "technology":"hydroflex",
+      "dimension":"default",
+      "img":"/images/boards/board2.jpg"
+    }
+  ],
+  "hybrid":[
+    {
+      "key":0,
+      "boardname":"Model 3",
+      "style":"hybrid",
+      "technology":"carbon",
+      "dimension":"default",
+      "img":"/images/boards/board3.jpg"
+    },
+    {
+      "key":1,
+      "boardname":"Model 5",
+      "style":"hybrid",
+      "technology":"carbon",
+      "dimension":"default",
+      "img":"/images/boards/board3.jpg"
+    },
+    {
+      "key":2,
+      "boardname":"Model 6",
+      "style":"hybrid",
+      "technology":"carbon",
+      "dimension":"default",
+      "img":"/images/boards/board3.jpg"
+    }
+  ],
+  "longboard":[
+    {
+      "key":0,
+      "boardname":"Model 4",
+      "style":"longboard",
+      "technology":"polyurethane foam",
+      "dimension":"default",
+      "img":"/images/boards/board4.jpg"
+    }
+  ]
+}

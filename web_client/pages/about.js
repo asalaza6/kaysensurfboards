@@ -106,7 +106,7 @@ export default function About() {
           .text{
             padding:5px;
             flex: 1;
-            justify-content: center;
+            justify-content:
             display: flex;
             font-family: 'BalooThambi';
             align-items: center;

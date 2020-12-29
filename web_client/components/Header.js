@@ -64,7 +64,8 @@ class Navbar extends React.Component {
   constructor(){
     super();
     this.scrollTo = this.scrollTo.bind(this);
-    this.nav = React.createRef();
+    
+    this.nav =  React.createRef();
     this.state = {
       width: 500,
       height:0,
@@ -75,11 +76,11 @@ class Navbar extends React.Component {
     this.handleResize = this.handleResize.bind(this);
     this.openMenu = this.openMenu.bind(this);
   }
-  componentDidMount(){
+  async componentDidMount(){
     //window.addEventListener('scroll', this.handleScroll);
     window.addEventListener('resize', this.handleResize,false);
     
-    
+    console.log(this.nav)
     this.setState({ width: this.nav.current.clientWidth});
     this.setState({ height: this.nav.current.clientHeight});
     
@@ -101,7 +102,7 @@ class Navbar extends React.Component {
   }
   
   handleResize(){
-    
+    console.log("resize")
     this.setState({ width: this.nav.current.clientWidth});
     this.setState({ height: this.nav.current.clientHeight});
     
@@ -148,10 +149,10 @@ class Navbar extends React.Component {
                   <span className = "navMenuItem">Surfboards</span>
                   {this.state.dropOpen ? 
                     <div>
-                      <Link href = "/boards"><span onClick = {()=>{this.dropMenu();this.scrollTo(0);}} className = "navMenuItem">Categories</span></Link>
-                      <Link href = "/technology"><span onClick = {()=>{this.dropMenu()}} className = "navMenuItem">Technology</span></Link>
-                      <Link href = "/questionaire"><span onClick = {()=>{this.dropMenu()}} className = "navMenuItem">Sizing Questionnaire</span></Link>
-                      <Link href = "/calculator"><span onClick = {()=>{this.dropMenu()}} className = "navMenuItem">Volume Calculator</span></Link>
+                      <Link href = "/boards"><span onClick = {()=>{this.dropMenu();this.openMenu();}} className = "navMenuItem">Categories</span></Link>
+                      <Link href = "/technology"><span onClick = {()=>{this.dropMenu();this.openMenu();}} className = "navMenuItem">Technology</span></Link>
+                      <Link href = "/questionaire"><span onClick = {()=>{this.dropMenu();this.openMenu();}} className = "navMenuItem">Sizing Questionnaire</span></Link>
+                      <Link href = "/calculator"><span onClick = {()=>{this.dropMenu();this.openMenu();}} className = "navMenuItem">Volume Calculator</span></Link>
                     </div>
                   :
                     null

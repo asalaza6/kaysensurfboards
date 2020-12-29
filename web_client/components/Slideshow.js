@@ -69,7 +69,7 @@ class Slideshow extends React.Component {
         <div className = "navContainer">
                 {this.state.selected?
                 <div className = "imageOpen" onClick = {()=>{this.setState({selected:false});this.startInterval();}}>
-                    <div className = "imgOpenImg">
+                    <div className = "imageOpenImg">
                         <img className = "img" src = {slideImages[this.state.position].image}/>
                     </div>
                     <div className="imageOpenDesc">
@@ -122,7 +122,6 @@ class Slideshow extends React.Component {
                     
                     position: fixed;
                     width:100%;
-                    padding:20px;
                     height:100%;
                     left: 0;
                     top: 0;
@@ -130,13 +129,21 @@ class Slideshow extends React.Component {
                     overflow-x:hidden;
                     display:flex;
                     flex-direction:column;
+                    justify-content: flex-end;
                     z-index:3;
                     background-color: rgba(255,255,255,.9);
                 }
                 .imageOpenDesc {
-                    font-size: 30pt;
+                    font-size: 15pt;
                     color: black;
                     font-family: 'BalooThambi';
+                    padding:20px;  
+                    max-width: 600px;   
+                }
+                .imageOpenImg{
+                    margin:auto;
+                    padding:10px; 
+                    max-width: 400px;       
                 }
                 .imgArrow {
                     width: 100%;
