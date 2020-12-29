@@ -1,39 +1,9 @@
 import Testimonial from "../testimonial.json";
-import { Component, useState } from "react";
+import { Component} from "react";
 import configs from "../config";
 import PropTypes from 'prop-types';
 
-const testItemStyle = {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignContent: "center",
-    border: '1px solid #DDD',
-    borderRadius:"20px",
-    marginBottom:20,
-    padding:10,
-}
-const containerStyle = {
-    display:"flex",
-    flexDirection:"column",
-    justifyContent:"space-evenly",
-    alignSelf:"center",
-    flexWrap:"wrap",
-    maxWidth:1000,
-    margin: "auto",
-    paddingTop:20,
-}
-const testNameStyle = {
-    textAlign: "right",
-    padding:10,
-    fontSize:18,
-}
 
-const testTestStyle = {
-    textAlign: "center",
-    padding:4,
-    fontSize:24,
-}
 async function approveReview(id,approveBoolean){
     let body = {
         id: id,
@@ -49,7 +19,7 @@ async function approveReview(id,approveBoolean){
             body: JSON.stringify(body)
         });
         const parseRes = await response.json();
-        console.log(parseRes);
+        // console.log(parseRes);
         alert(approveBoolean?"Approve successful":"Deletion successful")
         //this.setState({reviews:parseRes.rows});
         window.location = "/login"
@@ -58,16 +28,13 @@ async function approveReview(id,approveBoolean){
         console.log(err.message);
     }
 }
-function useForceUpdate(){
-    return () => setValue(value=>++value);
-}
 class Approval extends Component{
     constructor(props){
         super(props);
         this.state = {
             approve:null
         }
-        console.log(this.props.review_id);
+        // console.log(this.props.review_id);
 
     }
     render(){
@@ -93,8 +60,8 @@ Approval.propTypes = {
 function approveItem(test,index){
     var name = test.review_name;
     var testimonial = test.review_contents;
-    console.log(test);
-    console.log(configs.images.location+"reviews/"+test.review_id+"."+test.image_type);
+    // console.log(test);
+    // console.log(configs.images.location+"reviews/"+test.review_id+"."+test.image_type);
     test.approve = null;
     return(
         <div key = {index} className = "item">
@@ -232,13 +199,13 @@ export default class Testimonials extends Component{
                 }
             });
             const parseRes = await response.json();
-            console.log(parseRes.rows);
+            // console.log(parseRes.rows);
             if(parseRes.rows){
                 this.setState({reviews:parseRes.rows});
             }
             
         }catch(err){
-            console.log(err.message);
+            // console.log(err.message);
         }
     }
     render(){

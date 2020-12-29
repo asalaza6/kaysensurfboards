@@ -112,6 +112,8 @@ class Slideshow extends React.Component {
                     display:flex;
                     flex-direction: column;
                     justify-content: center;
+                    max-width:25px;
+                    padding:10px;
                     
                 }
                 .slideImage {

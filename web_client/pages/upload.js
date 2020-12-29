@@ -63,7 +63,7 @@ export default class Home extends Component{
                 body: JSON.stringify(body)
             });
             const parseRes = await response.json();
-            console.log(parseRes);
+            // console.log(parseRes);
             alert('image successfully uploaded');
             window.location = "/";
         }catch(err){

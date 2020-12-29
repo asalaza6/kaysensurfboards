@@ -1,5 +1,4 @@
 import React,{Component} from 'react';
-import configs from '../config';
 import emailjs from 'emailjs-com';
 export default class Contact extends Component {
   constructor(){
@@ -23,13 +22,13 @@ export default class Contact extends Component {
   }
   sendEmail(evt){
     evt.preventDefault();
-    console.log(evt.target);
+    // console.log(evt.target);
     emailjs.sendForm('service_ryt0zoo',
       'template_7h0wmmb',
       evt.target,
       'user_28Cp9KA58qJxKIBG6ylwS'
       ).then((result) => {
-        console.log(result.text);
+        // console.log(result.text);
         alert("Message sent. Thank you!");
         window.location = ""
     }, (error) => {

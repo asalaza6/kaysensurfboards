@@ -62,7 +62,7 @@ function mediaItem(test){
                     overflow: hidden;
                     border-radius: 25px;
                     margin:10px;
-                    max-width: 465px;
+                    max-width: 300px;
                     justify-content:right;
                 }
             `}</style>

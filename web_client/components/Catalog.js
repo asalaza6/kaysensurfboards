@@ -1,64 +1,14 @@
 import Boards from "../boards.json";
-import configs from "../config.js";
 import Link from 'next/link';
-const boardStyles = [
-    "shortboard",
-    "longboard",
-    "fish",
-    "midlength",
-    "hybrid"
-];
-const boardItemStyle = {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignContent: "center"
-}
-const containerStyle = {
-    display:"flex",
-    flexDirection:"row",
-    justifyContent:"space-evenly",
-    alignSelf:"center",
-    flexWrap:"wrap",
-    maxWidth:1000
-}
-const boardNameStyle = {
-    textAlign: "center",
-    padding:10,
-    fontSize:24,
-}
-const boardStyleStyle = {
-    textAlign: "center",
-    padding:4,
-    fontSize:18,
-}
-const boardTechStyle = {
-    textAlign: "center",
-    padding:4,
-    fontSize:18,
-}
-const boardDimStyle = {
-    textAlign: "center",
-    padding:4,
-    fontSize:18,
-}
-const boardImgStyle = {
-    maxWidth:465,
-    width:"98%",
-    border: '1px solid #DDD',
-    borderRadius:"20px",
-}
 
 
 function boardItem(Board){
     var name = Board.boardname;
     var style = Board.style;
-    var tech = Board.technology;
-    var dimension = Board.dimension;
     var imgSrc = Board.img;
     var key = Board.key;
     return(
-        <Link key = {key}  href = {`/board/${style}/${key}`}><div className = "container">
+        <Link key = {key}  href = {`/boards/${style}/${key}`}><div className = "container">
             
             {imgSrc ? <img  className = "img" src = {imgSrc}></img>:null}
             <div  className = "name">{name}</div>

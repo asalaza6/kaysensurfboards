@@ -1,64 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 
-import Splash from './Splash';
 import menuButton from "../public/menu.svg";
 import logo from "../public/logo2.png";
-class Dropdown extends React.Component {
-  constructor(){
-    super();
-    this.state={
-      open:false
-    }
-  }
-  
-  openMenu(){
-    this.setState({ open: !this.state.open});
-  }
-  render(){
-    return(
-      <div id = "navItem">
-        <div className = {this.state.open?"hue":null} id = "menu">
-          <Link href = "/boards"><span className = "navItem">SurfBoards</span></Link>
-          {this.state.open ? 
-            <div className ="openedMenu">
-              <Link href = "/"><span onClick = {()=>{this.openMenu();this.scrollTo(0);}} className = "navMenuItem">Home</span></Link>
-              <Link href = "/about"><span onClick = {()=>{this.openMenu()}} className = "navMenuItem">About</span></Link>
-              <Link href = "/boards"><span onClick = {()=>{this.openMenu()}} className = "navMenuItem">Surfboards</span></Link>
-              <Link href = "/testimonials"><span onClick = {()=>{this.openMenu()}} className = "navMenuItem">Testimonials</span></Link>
-              <Link href = "/media"><span onClick = {()=>{this.openMenu()}} className = "navMenuItem">Media</span></Link>
-              <Link href = "/contact"><span onClick = {()=>{this.openMenu()}} className = "navMenuItem">Contact</span></Link>
-            </div>
-          :
-            null
-          }
-        </div>
-        <style jsx>{`
-          .navItem {
-            height:100%;
-            position: relative;
-            align-items: center;
-            justify-content: center;
-            flex: 1;
-            display: flex;
-            border: 1pt white solid;
-            background-color: black;
-            color:white;
-            -webkit-touch-callout: none; /* iOS Safari */
-            -webkit-user-select: none; /* Safari */
-            -khtml-user-select: none; /* Konqueror HTML */
-            -moz-user-select: none; /* Old versions of Firefox */
-            -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
-            @extend .normalText;
-            font-family: 'BalooThambi-SemiBold';
-            font-size: 15pt;
-          }`
-          }</style>
-      </div>
-    )
-  }
-}
+
 class Navbar extends React.Component {
 
   constructor(){
@@ -80,7 +25,7 @@ class Navbar extends React.Component {
     //window.addEventListener('scroll', this.handleScroll);
     window.addEventListener('resize', this.handleResize,false);
     
-    console.log(this.nav)
+    // console.log(this.nav)
     this.setState({ width: this.nav.current.clientWidth});
     this.setState({ height: this.nav.current.clientHeight});
     
@@ -102,7 +47,7 @@ class Navbar extends React.Component {
   }
   
   handleResize(){
-    console.log("resize")
+    // console.log("resize")
     this.setState({ width: this.nav.current.clientWidth});
     this.setState({ height: this.nav.current.clientHeight});
     
@@ -271,7 +216,7 @@ class Navbar extends React.Component {
             user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
             @extend .normalText;
             font-family: 'BalooThambi-SemiBold';
-            font-size: 15pt;
+            font-size: 12pt;
           }
           .normalText {
             font-family: 'BalooThambi';

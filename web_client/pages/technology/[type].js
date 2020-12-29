@@ -1,8 +1,7 @@
-import { useRouter,withRouter } from 'next/router';
-import { useEffect } from 'react';
-import Markdown from 'react-markdown';
-import Boards from "../../../boards.json";
-class BoardPage extends React.Component{
+import {withRouter,useRouter } from 'next/router';
+
+import Technology from "../../technology";
+class TechPage extends React.Component{
   constructor(props){
     super(props); 
     this.state = {
@@ -11,27 +10,24 @@ class BoardPage extends React.Component{
     
   }
   componentDidMount(){
-    const {type,id} = this.props.router.query;
-    console.log(type,id)
-    const board = Boards[type][id];
+    const {type} = this.props.router.query;
+    // console.log(type,this.props.router)
+    const tech = Technology[type];
+    // console.log(Technology,tech);
     this.setState({
-      name:board.boardname,
-      imgSrc:board.img,          
-      dimension:board.dimension,
-      style:board.style,
-      tech:board.tech,
+      name:type,
+      imgSrc:tech.img,          
+      desc:tech.desc
 
     });
   }
   render(){
   return (
     <div className = "container">
-            
-            {this.state.imgSrc ? <img  className = "img" src = {this.state.imgSrc}></img>:null}
             <div  className = "name">{this.state.name}</div>
-            <a  className = "style">{"Style: " + this.state.style}</a>
-            <a  className = "tech"> {"Technology: " + this.state.tech}</a>
-            <a  className = "dim">{"Dimensions: " + this.state.dimension}</a>
+            {this.state.imgSrc ? <img  className = "img" src = {this.state.imgSrc}></img>:null}
+            
+            <a  className = "tech"> {this.state.desc}</a>
             <style jsx>{`
                 @font-face {
                     font-family: 'BalooThambi';
@@ -89,4 +85,4 @@ class BoardPage extends React.Component{
       }
 };
 
-export default withRouter(BoardPage);
+export default withRouter(TechPage);

@@ -1,8 +1,6 @@
 import React, {Component, Fragment, useState } from "react";
 import {toast} from 'react-toastify';
 import configs from '../config';
-import Router from 'next/router';
-import { render } from "react-dom";
 import Testimonials from "../components/Testimonials";
 
 const Login = ({setAuth})=>{
@@ -23,7 +21,7 @@ const Login = ({setAuth})=>{
 
         try{
             const body = {username,password};
-            console.log(body);
+            // console.log(body);
             const response = await fetch(`${configs.api.url}:${configs.api.port}/auth/login`,
                 {
                     method: "POST",
@@ -34,7 +32,7 @@ const Login = ({setAuth})=>{
             const parseRes = await response.json();
             if(parseRes.token){
                 localStorage.setItem("token", parseRes.token);
-                console.log(parseRes.token)
+                // console.log(parseRes.token)
                 alert("login successful");
                 setAuth(true);
                 toast.success("login successful");
@@ -46,7 +44,7 @@ const Login = ({setAuth})=>{
         }catch(err){
             console.error(err.message);
         }
-        console.log("done");
+        // console.log("done");
     }
 
     return (
@@ -99,16 +97,16 @@ class ManagerPortal extends Component{
          this.state={
               auth:false
          }
-         console.log("constructor",this.state);
+        //  console.log("constructor",this.state);
          this.setAuth=this.setAuth.bind(this);
          this.isAuth=this.isAuth.bind(this);
     }
     async componentDidMount(){
         await this.isAuth();
-        console.log("Mount",typeof(this.state.auth),this.state.auth);
+        // console.log("Mount",typeof(this.state.auth),this.state.auth);
     }
     componentDidUpdate(){
-        console.log("update",this.state.auth);
+        // console.log("update",this.state.auth);
     }
     async isAuth(){
         try{
@@ -128,16 +126,16 @@ class ManagerPortal extends Component{
     
     setAuth(boolean){
         this.setState({auth:boolean});
-        console.log("setAuthHook",this.state.auth)
+        // console.log("setAuthHook",this.state.auth)
     }
     render(){
-        console.log("render",this.state.auth);
+        // console.log("render",this.state.auth);
         if(this.state.auth==true){
         return(<Fragment>
                     <Dashboard setAuth={this.setAuth}/>
                 </Fragment>);
         }else{
-            console.log(typeof(this.state.auth),this.state.auth,"if")
+            // console.log(typeof(this.state.auth),this.state.auth,"if")
 
             return(
             <Fragment>

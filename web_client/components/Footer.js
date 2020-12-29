@@ -21,12 +21,12 @@ function Footer(){
             </div>
             <div className = "section">
                 <div className = "title">Pages</div>
-                <Link href = "/"><span className = "text">Home</span></Link>
-                <Link href = "/about"><span className = "text">About</span></Link>
-                <Link href = "/boards"><span className = "text">Boards</span></Link>
-                <Link href = "/testimonials"><span className = "text">Testimonials</span></Link>
-                <Link href = "/media"><span className = "text">Media</span></Link>
-                <Link href = "/contact"><span className = "text">Contact</span></Link>
+                <Link href = "/"><span className = "pagesText">Home</span></Link>
+                <Link href = "/about"><span className = "pagesText">About</span></Link>
+                <Link href = "/boards"><span className = "pagesText">Boards</span></Link>
+                <Link href = "/testimonials"><span className = "pagesText">Testimonials</span></Link>
+                <Link href = "/media"><span className = "pagesText">Media</span></Link>
+                <Link href = "/contact"><span className = "pagesText">Contact</span></Link>
             </div>
             <div className = "section">
                 <div className = "title">Contact</div>
@@ -64,13 +64,17 @@ function Footer(){
         }
         .title{
             color:white;
-            font-size:20pt;
+            font-size:16pt;
             margin:0px 0px 10px 0px;
         }
-        .text{
+        .pagesText{
             color:white;
-            font-size:12pt;
-            margin:0px;
+            font-size:10pt;
+            cursor:pointer;
+        }
+        .text {
+            color:white;
+            font-size:10pt;
         }
         .container{
             padding:10px;
@@ -84,6 +88,7 @@ function Footer(){
             font-family: 'BalooThambi';
             text-align: center;
             color:white;
+            font-size:10pt;
         }
     `}</style>
     </div>

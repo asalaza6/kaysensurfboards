@@ -1,12 +1,7 @@
 
-import Catalog from "../components/Catalog";
-import Splash from "../components/Splash";
 import React from 'react';
-import Slideshow from "../components/Slideshow";
 
-import Canvas from "../components/Graph2";
-// var __html = require("../sizing_long.html");
-// var template = {__html: __html};
+import Canvas from "../components/Graph3";
 
 export default function Index() {
   
@@ -14,7 +9,7 @@ export default function Index() {
     <div className = "container">
        <div className = "message">Welcome to the Volume Calculator!</div>
       {/* <iframe src={__html}/> */}
-      <Canvas/>
+      {/* <Canvas/> */}
       <style jsx>{`
       @font-face {
         font-family: 'BalooThambi';
