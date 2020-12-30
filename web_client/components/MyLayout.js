@@ -12,7 +12,7 @@ import Footer from "./Footer";
           display:flex;
           flex-direction: column;
           margin: 0px;
-          height: 100vh;
+          min-height: 100vh;
           justify-content:space-between;
         }
       `}</style>

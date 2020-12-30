@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-import Canvas from "../components/Graph3";
+// import Canvas from "../components/Graph3";
 
 export default function Index() {
   
