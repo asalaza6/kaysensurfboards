@@ -60,17 +60,86 @@ const contain = {
 export default function About() {
   return (
       <div className = "container">
-        {bioImages.map((img,index)=>{
-          return(<div key = {index} id = {img.style}>
-            <div  className = "picture">
-              <img className = "image" src = {img.file}/>
-            </div>
-            <div className = "text">
-              {img.desc}
-            </div>
-          </div>);
-        })}
+        <div className = "rowFlex">
+          <div className = "mainText">
+            {"Chris Kaysen has been shaping surfboards in San Clemente for 35 years. With 1000's of boards and counting, you can trust Chris to shape a surfboard to fit your exact needs!"}
+          </div>
+          <div className = "mainImage">
+            <img className = "image" src = {bioImages[0].file}/>
+          </div>
+        </div>
+        <div className = "slideFlex">
+          <div className = "slideImage"style = {{flex:19.7}}>
+            <img className = "image" src = {bioImages[5].file}/>
+          </div>
+          <div className = "slideImage"style = {{flex:18}}>
+            <img className = "image" src = {bioImages[1].file}/>
+          </div>
+          <div className = "slideImage"style = {{flex:21}}>
+            <img className = "image" src = {bioImages[6].file}/>
+          </div>
+        </div>
+        <div className="slideDescription">
+          At Kaysen Surfboards we guarantee quality surfboards whether your competiing at a pro tournament or spending a fun Saturday at Newport Beach!
+        </div>
+        <div className = "slideFlex">
+          <div className = "slideImage" style = {{flex:16.2}}>
+            <img className = "image" src = {bioImages[4].file}/>
+          </div>
+          <div className = "slideImage" style = {{flex:21}}>
+            <img className = "image" src = {bioImages[2].file}/>
+          </div>
+          <div className = "slideImage" style = {{flex:14.1}}>
+            <img className = "image" src = {bioImages[3].file}/>
+          </div>
+        </div>
+        <div className="slideDescription">
+          We make it easy for you to order, design and communicate with the building process in order to ensure an amazing experience!
+        </div>
+      {/* {bioImages.map((img,index)=>{
+        return(<div key = {index} id = {img.style}>
+          <div  className = "picture">
+            <img className = "image" src = {img.file}/>
+          </div>
+          <div className = "text">
+            {img.desc}
+          </div>
+        </div>);
+      })} */}
         <style jsx>{`
+          .rowFlex{
+            width:100%;
+            display:flex;
+            flex-direction:row;
+            justify-content: center;
+            max-width: 1000px;
+          }
+          .mainText{
+            padding:15px;
+            flex: 1;
+            display: flex;
+            font-family: 'BalooThambi';
+            align-items: center;
+            padding:10px;
+          }
+          .mainImage {
+            flex: 1;
+          }
+          .slideFlex{
+            width:100%;
+            display:flex;
+            flex-direction:row;
+            justify-content: center;
+            max-width: 1000px;
+          }
+          .slideDescription {
+            width:100%;
+            display: flex;
+            font-family: 'BalooThambi';
+            justify-content:center;
+            margin:40px;
+            text-align:space-evenly;
+          }
            @font-face {
             font-family: 'BalooThambi';
             src:url('/fonts/BalooThambi2-Regular.ttf');
@@ -115,7 +184,6 @@ export default function About() {
             flex: 4;
           }
           .image {
-            max-width: 500px;
             width:100%;
           }
         `}</style>

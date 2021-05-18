@@ -8,8 +8,9 @@ export default function Index() {
   return (
     <div className = "container">
        <div className = "message">Welcome to the Volume Calculator!</div>
-      {/* <iframe src={__html}/> */}
-      {/* <Canvas/> */}
+      <div className="message">
+          Coming soon!
+      </div>
       <style jsx>{`
       @font-face {
         font-family: 'BalooThambi';

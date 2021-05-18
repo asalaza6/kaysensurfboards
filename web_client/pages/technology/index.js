@@ -10,6 +10,9 @@ export default function Index() {
   // keys.map(x=>{console.log(x)});
   return (
     <div className = "container">
+      <div className="title">
+          More technology information coming soon!
+      </div>
        <div className = "title">Technology Options</div>
        {keys.map((tech,key)=>{return (
          <Link key = {key}  href = {`/technology/${tech}`}>

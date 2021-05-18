@@ -78,6 +78,9 @@ export default class Catalog extends React.Component{
     render(){
         return(
             <div className = "container">
+                <div className="title">
+                    More board information coming soon!
+                </div>
                 <div className = "title">Short Boards</div>
                 <div className = "boardContainer">
                     {Boards.shortboard.map(board=>boardItem(board))}

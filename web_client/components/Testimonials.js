@@ -71,7 +71,7 @@ function approveItem(test,index){
             {/*<div className = "rating">
                 <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
     </div>*/}
-            <div className = "name">{"- " + name}</div>
+            <div className = "name">{name!=""?"- " + name:""}</div>
             <style jsx>{`
                 @font-face {
                     font-family: 'BalooThambi';
@@ -133,7 +133,7 @@ function testimonialItem(test,index,location=null){
             {/*<div className = "rating">
                 <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
     </div>*/}
-            <div className = "name">{"- " + name}</div>
+            <div className = "name">{name==""?"":"- " + name}</div>
             <style jsx>{`
                 @font-face {
                     font-family: 'BalooThambi';
@@ -211,7 +211,7 @@ export default class Testimonials extends Component{
     render(){
         return(
             <div className = "containerStyle">
-                {this.props.route == "reviews"?Testimonial.map((test,index)=>{console.log(test);return(testimonialItem(test,index,test.image))}):null}
+                {this.props.route == "reviews"?Testimonial.map((test,index)=>{return(testimonialItem(test,index,test.image))}):null}
                 {this.state.reviews.map((test,index)=>(this.props.route=="approve"?approveItem(test,index):testimonialItem(test,index)))}
                 {this.props.route == "approve" && this.state.reviews.length == 0?"No reviews to Approve right now!":null}
         <style jsx >{`

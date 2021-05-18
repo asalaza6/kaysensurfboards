@@ -1,17 +1,17 @@
 import React from 'react';
 const slideImages = [
     {image: '/images/slideshow/surf1.jpeg',
-    desc: 'very long description here. lets see how this works. very long description here. lets see how this works. very long description here. lets see how this works. very long description here. lets see how this works. very long description here. lets see how this works. very long description here. lets see how this works. '},
+    desc: 'Surfboard competition using a Kaysen Surfboard!'},
     {image: '/images/slideshow/surf2.jpeg',
-    desc: 'desc here'},
+    desc: 'Surfboard competition using a Kaysen Surfboard!'},
     {image: '/images/slideshow/surf3.jpeg',
-    desc: 'desc here'},
+    desc: 'Surfboard competition using a Kaysen Surfboard!'},
     {image: '/images/slideshow/surf4.jpeg',
-    desc: 'desc here'},
+    desc: 'Surfboard competition using a Kaysen Surfboard!'},
     {image: '/images/slideshow/surf5.jpeg',
-    desc: 'desc here'},
+    desc: 'Surfboard competition using a Kaysen Surfboard!'},
     {image: '/images/slideshow/surf6.jpeg',
-    desc: 'desc here'}
+    desc: 'A Kaysen Surfboard Selection!'}
 ];
 
 class Slideshow extends React.Component {
@@ -88,7 +88,7 @@ class Slideshow extends React.Component {
                         <img className = "imgArrow" src = "/right-arrow.svg"/>
                     </div>
                 </div>
-                <div className = "imgDesc">Description</div>
+                <div className = "imgDesc">{slideImages[this.state.position].desc}</div>
             <style jsx >{`
                 @font-face {
                     font-family: 'BalooThambi';
@@ -131,7 +131,8 @@ class Slideshow extends React.Component {
                     overflow-x:hidden;
                     display:flex;
                     flex-direction:column;
-                    justify-content: flex-end;
+                    align-items: center;
+                    justify-content: center;
                     z-index:3;
                     background-color: rgba(255,255,255,.9);
                 }
@@ -143,9 +144,8 @@ class Slideshow extends React.Component {
                     max-width: 600px;   
                 }
                 .imageOpenImg{
-                    margin:auto;
                     padding:10px; 
-                    max-width: 400px;       
+                    max-width: 400px;      
                 }
                 .imgArrow {
                     width: 100%;
