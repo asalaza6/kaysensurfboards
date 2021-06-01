@@ -81,7 +81,10 @@ export default class Catalog extends React.Component{
                 <div className="title">
                     More board information coming soon!
                 </div>
-                <div className = "title">Short Boards</div>
+                <div className="title">
+                    Call direct to discuss your personal design options!
+                </div>
+                {/* <div className = "title">Short Boards</div>
                 <div className = "boardContainer">
                     {Boards.shortboard.map(board=>boardItem(board))}
                 </div>
@@ -96,7 +99,7 @@ export default class Catalog extends React.Component{
                 <div className = "title">Long Boards</div>
                 <div className = "boardContainer">
                     {Boards.longboard.map(board=>boardItem(board))}
-                </div>
+                </div> */}
                 <style jsx>{`
                     @font-face {
                         

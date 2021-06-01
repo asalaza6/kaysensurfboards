@@ -31,9 +31,8 @@ function Footer(){
             <div className = "section">
                 <div className = "title">Contact</div>
                 <div className = "text">Kaysen Surfboards</div>
-                <div className = "text">Street Address</div>
-                <div className = "text">Irvine, CA 92612</div>
-                <div className = "text">Phone: 999.999.9999</div>
+                <div className = "text">San Clemente, CA</div>
+                <a className = "text" href="tel:+19493957079">Phone: 949.395.7079</a>
                 <div className = "text">Send us a message <Link href = "/contact">HERE</Link></div>
             </div>
         </div>

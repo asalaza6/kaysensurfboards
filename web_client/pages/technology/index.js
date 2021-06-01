@@ -15,9 +15,10 @@ export default function Index() {
       </div>
        <div className = "title">Technology Options</div>
        {keys.map((tech,key)=>{return (
-         <Link key = {key}  href = {`/technology/${tech}`}>
-           <div className = "tech">{tech}</div>
-         </Link>
+        //  <Link key = {key}  href = {`/technology/${tech}`}>
+        //    <div className = "tech">{tech}</div>
+        //  </Link>
+        <div className = "tech">{tech}</div>
          )
        })}
 

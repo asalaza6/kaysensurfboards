@@ -1,17 +1,17 @@
 import React from 'react';
 const slideImages = [
     {image: '/images/slideshow/surf1.jpeg',
-    desc: 'Surfboard competition using a Kaysen Surfboard!'},
+    desc: 'Custom Kaysen Surfboard in action!'},
     {image: '/images/slideshow/surf2.jpeg',
-    desc: 'Surfboard competition using a Kaysen Surfboard!'},
+    desc: 'Custom Kaysen Surfboard in action!'},
     {image: '/images/slideshow/surf3.jpeg',
-    desc: 'Surfboard competition using a Kaysen Surfboard!'},
+    desc: 'Custom Kaysen Surfboard in action!'},
     {image: '/images/slideshow/surf4.jpeg',
-    desc: 'Surfboard competition using a Kaysen Surfboard!'},
+    desc: 'Custom Kaysen Surfboard in action!'},
     {image: '/images/slideshow/surf5.jpeg',
-    desc: 'Surfboard competition using a Kaysen Surfboard!'},
+    desc: 'Custom Kaysen Surfboard in action!'},
     {image: '/images/slideshow/surf6.jpeg',
-    desc: 'A Kaysen Surfboard Selection!'}
+    desc: 'A Kaysen Surfboard Collection because just one custom Kaysen Surfboard is not enough!'}
 ];
 
 class Slideshow extends React.Component {
@@ -82,13 +82,13 @@ class Slideshow extends React.Component {
                     </div>
                     <div onClick={()=>{this.imageClick()}} className = "slideImage">
                         <img className = "img" src = {slideImages[this.state.position].image}/>
-                        
+                        <div className = "imgDesc">{slideImages[this.state.position].desc}</div>
                     </div>
                     <div className = "navigationArrows"  onClick = {this.onPrev}>
                         <img className = "imgArrow" src = "/right-arrow.svg"/>
                     </div>
                 </div>
-                <div className = "imgDesc">{slideImages[this.state.position].desc}</div>
+                
             <style jsx >{`
                 @font-face {
                     font-family: 'BalooThambi';

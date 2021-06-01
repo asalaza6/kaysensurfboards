@@ -8,7 +8,7 @@ export default function Index() {
   
   return (
     <div className = "container">
-       <div className = "message">Welcome to Kaysen Surfboards! <br/>Home to the best surfboards in Orange County!</div>
+       <div className = "message">Welcome to Kaysen Surfboards! <br/>Home to the best surfboards on the planet!</div>
       <Slideshow/>
 
      
